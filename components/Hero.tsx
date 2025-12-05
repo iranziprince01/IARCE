@@ -12,7 +12,7 @@ export default function Hero() {
   const locale = useLocale();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 sm:pt-24 overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -29,18 +29,18 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/85 via-blue-800/80 to-gold-600/70"></div>
       </div>
       
-      <div className="container-custom section-padding relative z-10 w-full">
+      <div className="container-custom py-12 sm:py-16 md:py-20 lg:py-24 relative z-10 w-full">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center max-w-4xl sm:max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto w-full px-4 sm:px-6"
+          className="text-center max-w-4xl sm:max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto w-full px-4 sm:px-6 md:px-8"
         >
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white mb-4 sm:mb-6 leading-tight"
+            className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white mb-3 sm:mb-4 md:mb-6 leading-tight px-2"
           >
             {t('title')}
           </motion.h1>
@@ -48,7 +48,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white/95 mb-6 sm:mb-8 md:mb-10 font-light px-2"
+            className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-white/95 mb-4 sm:mb-6 md:mb-8 lg:mb-10 font-light px-2 sm:px-4"
           >
             {t('subtitle')}
           </motion.p>
@@ -56,19 +56,19 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6 sm:mb-8 md:mb-10"
           >
             <Link 
               href={locale === defaultLocale ? '/services-sermons' : `/${locale}/services-sermons`}
               prefetch={true}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 text-base sm:text-lg"
+              className="w-full sm:w-auto px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 text-sm sm:text-base md:text-lg"
             >
               {t('worshipWithUs')}
             </Link>
             <Link
               href={locale === defaultLocale ? '/donate' : `/${locale}/donate`}
               prefetch={true}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-semibold rounded-lg border-2 border-white/30 hover:border-white/50 transition-all duration-300 text-base sm:text-lg"
+              className="w-full sm:w-auto px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-semibold rounded-lg border-2 border-white/30 hover:border-white/50 transition-all duration-300 text-sm sm:text-base md:text-lg"
             >
               {t('donate')}
             </Link>
@@ -81,11 +81,11 @@ export default function Hero() {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="max-w-3xl mx-auto"
           >
-            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20">
-              <p className="text-lg md:text-xl text-white italic text-center leading-relaxed mb-2">
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-5 md:p-6 border border-white/20">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white italic text-center leading-relaxed mb-2 px-2">
                 "{t('bibleVerse')}"
               </p>
-              <p className="text-base text-gold-200 text-center font-semibold">
+              <p className="text-xs sm:text-sm md:text-base text-gold-200 text-center font-semibold">
                 {t('bibleVerseRef')}
               </p>
             </div>

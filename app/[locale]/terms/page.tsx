@@ -8,14 +8,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   return {
     title:
-      'Terms & Conditions | International Anglican Revival Church of Edmonton',
+      'Terms & Conditions | International Anglican Revival Ministries',
     description:
-      'Terms and Conditions for International Anglican Revival Church of Edmonton. Read our terms of use and service agreement.',
+      'Terms and Conditions for International Anglican Revival Ministries. Read our terms of use and service agreement.',
     openGraph: {
       title:
-        'Terms & Conditions | International Anglican Revival Church of Edmonton',
+        'Terms & Conditions | International Anglican Revival Ministries',
       description:
-        'Terms and Conditions for International Anglican Revival Church of Edmonton.',
+        'Terms and Conditions for International Anglican Revival Ministries.',
       type: 'website',
     },
   };

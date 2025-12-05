@@ -4,6 +4,7 @@
     "about": "Tebwe",
     "ministries": "Minisiteri",
     "sermons": "Ibibwirizwa",
+    "foundation": "Foundation",
     "getInvolved": "Kora",
     "volunteer": "kora Umurimo",
     "becomeMember": "BA umunyamuryango",
@@ -31,23 +32,30 @@
     "subscribeDesc": "Wakire amakuru buri cyumweru. Komeza kwiyubaka no guhuza na Imana.",
     "emailPlaceholder": "Injiza imeyili yawe",
     "subscribeButton": "Iyandikishe",
-    "description": "International Anglican Revival Church of Edmonton - Umuryango w'Abakristu wihariye washinzwe kwiyubaka mu mutima, umwete, no gukorera.",
-    "copyright": "© {year} International Anglican Revival Church of Edmonton. Uburenganzira bwose burarinzwe.",
+    "description": "International Anglican Revival Ministries - Umuryango w'Abakristu wihariye washinzwe kwiyubaka mu mutima, umwete, no gukorera.",
+    "copyright": "© {year} International Anglican Revival Ministries. Uburenganzira bwose burarinzwe.",
     "addressLabel": "Aderesi"
   },
   "home": {
-    "title": "Murakaza neza muri International Anglican Revival Church of Edmonton",
+    "title": "Murakaza neza muri International Anglican Revival Ministries",
     "subtitle": "Umuryango w'Abakristu wihariye washinzwe kwiyubaka mu mutima, umwete, no gukorera",
     "cta": "Dufatanye kuri Kwezi",
     "learnMore": "Menya byinshi",
     "donate": "Tanga / Fasha",
     "worshipWithUs": "Dufatante Kuramya",
     "bibleVerse": "Mwese abarushye n'abaremerewe, nimuze munsange ndabaruhura.",
-    "bibleVerseRef": "— Matayo 11:28"
+    "bibleVerseRef": "— Matayo 11:28",
+    "welcomeGreeting": "Banyacyubahiro bacu",
+    "welcomeTitle1": "Murakaza neza",
+    "welcomeTitle2": "muri International Anglican Revival Ministries!",
+    "welcomeMessage1": "Twishimiye kandi dufite umunezero wo kwakira ku rubuga rwacu rw'ibanze rwa International Anglican Revival Ministries. Niba wongeye gukoresha urubuga rwacu bwa mbere cyangwa waba wari umwe mu muryango wacu wihariye, nyamuneka menya ko wakunzwe, wihaye agaciro, kandi wakiriwe neza.",
+    "welcomeMessage2": "Iyi nsi yashinzwe kugira ngo ibe inkomoko y'umwete, inyigisho z'umutima, n'umuryango, ituma duramuka dukomeza gufatanya mu kwemera kwawe.",
+    "welcomeMessage3": "Dukomeza gukorera imiryango hafi n'ikure, gusangira urukundo rw'Imana no gukorera abakenera umwete n'umwete.",
+    "pastorName": "Intumwa Rev. Jean Nsengiyumva"
   },
   "about": {
     "title": "Twebwe",
-    "church": "International Anglican Revival Church of Edmonton ni umuryango w'Abakristu wihariye kwiyubaka mu mutima, kwiyubaka mu mutima, no gukorera abandi. Turi ikiliziya y'Ubwongereza-Pentekoste/Protestanti ishinzwe kwamamaza Inkuru Nziza, gufasha imiryango, no guha abemera imbaraga zo gukomeza ubuzima bwihariye.",
+    "church": "International Anglican Revival Ministries ni umuryango w'Abakristu wihariye kwiyubaka mu mutima, kwiyubaka mu mutima, no gukorera abandi. Turi ikiliziya y'Ubwongereza-Pentekoste/Protestanti ishinzwe kwamamaza Inkuru Nziza, gufasha imiryango, no guha abemera imbaraga zo gukomeza ubuzima bwihariye.",
     "congregation": "Dufasha umuryango w'Abakristu wihariye i Edmonton, harimo Abakanada n'Abanyafurika, dukoresha icyongereza no gufasha mu gifaransa n'Ikinyarwanda.",
     "ministry": "Minisiteri yacu iri hanze y'u Kanada, dukorana n'amadini muri Afurika no gufasha abimukira, abapfakazi, imfubyi, n'imiryango yasize amazu muri Uganda, Kenya, Rwanda, n'indi mihanda.",
     "vision": "Inzozi",
@@ -63,8 +71,8 @@
       "Gushyira mu bikorwa gahunda zifasha abimukira n'imiryango y'Abakristu muri Afurika."
     ],
     "leadership": "Abayobozi",
-    "pastor": "Rev. Jean Sengiyumva, Umupasitoli Mukuru",
-    "pastorBio": "Rev. Sengiyumva ni umusavyi w'Imana wihariye afite umwete wo gukorera mu ndimi nyinshi. Nubwo icyongereza si cyo cyambere, akorera mu gifaransa n'Ikinyarwanda kugira ngo agere n'imiryango yihariye. Intego ye yavukiye muri Yeremiya 20:9, atwara ijambo ry'Imana nk'umuriro mu magufwa ye.",
+    "pastor": "Intumwa Rev. Jean Sengiyumva, Umupasitoli Mukuru",
+    "pastorBio": "Intumwa Rev. Sengiyumva ni umusavyi w'Imana wihariye afite umwete wo gukorera mu ndimi nyinshi. Nubwo icyongereza si cyo cyambere, akorera mu gifaransa n'Ikinyarwanda kugira ngo agere n'imiryango yihariye. Intego ye yavukiye muri Yeremiya 20:9, atwara ijambo ry'Imana nk'umuriro mu magufwa ye.",
     "coreValues": "Incamake zacu",
     "coreValuesDesc": "Izi ncamake z'ibanze ziyobora ibintu byose dukora nk'umuryango w'ikiliziya, zihindura intego yacu, minisiteri, n'ubwoba.",
     "values": [
@@ -100,7 +108,7 @@
       "Turakwemera ubwiyunge bw'umwuka bw'abemera mu Mwami wacu Yesu Kristo."
     ],
     "history": "Amateka yacu",
-    "historyDesc": "International Anglican Revival Church of Edmonton yashinzwe kugira ngo ishake abantu bo mu bwoba bwose n'abantu b'inyamanswa mu mujyi wa Edmonton, cyane cyane abo mu banyarwanda bashakisha aho basenga bashimira imyizerere y'Ubwongereza n'ibyiyumvo by'Umwuka.",
+    "historyDesc": "International Anglican Revival Ministries yashinzwe kugira ngo ishake abantu bo mu bwoba bwose n'abantu b'inyamanswa mu mujyi wa Edmonton, cyane cyane abo mu banyarwanda bashakisha aho basenga bashimira imyizerere y'Ubwongereza n'ibyiyumvo by'Umwuka.",
     "historyContent": [
       "Yatangiye n'intego yo guhuza imico n'indimi, kiliziya yacu yatangiye nk'isangano gato ry'abemera biyemeje gusangiza Inkuru Nziza mu rurimi rw'Icyongereza n'icya Kinyarwanda.",
       "Mu myaka yashize, twagize umuryango ukomeye ushaka gufasha abantu bo mu mujyi wa Edmonton, ariko kandi dukomeza gufasha abantu bo mu bindi bihugu byo mu Bufarika.",
@@ -283,7 +291,7 @@
     "whatToExpectDesc": "Serivisi zacu zirakaza kandi zirimo, zifite inyigisho zihariye, umuziki wihariye, n'ubwoba bwuzuye. Dukoresha ubusenga mu cyongereza n'Ikinyarwanda. Niba wongeye gukora cyangwa waba umunyamuryango w'ikigaragara, uzabona aho wiyubaka no kwiyubaka mu kwemera."
   },
   "foundation": {
-    "title": "Shelter of Refugee Seniors International Ministries",
+    "title": "Shelter of Refugee Seniors International Ministries (SRSIM)",
     "subtitle": "Gukorera abimukira b'Abakristu, abakuru, n'imiryango yasize amazu binyuze mu kwiyubaka n'ubwoba",
     "about": "Ibyerekeye Foundation",
     "aboutDesc": "Shelter of Refugee Seniors International Ministries (SRSIM) ni minisiteri y'umwete ishinzwe gukorera abimukira b'Abakristu, abakuru, n'imiryango yasize amazu kwisi. Dutanga inkunga, ibikoresho, n'icyizere ku bantu basize amazu binyuze mu guhangana, kwiyubaka, cyangwa ibyago by'ikirere.",
@@ -373,9 +381,9 @@
     "seniorPastor": "Umupasitoli Mukuru",
     "pastors": "Abapasitoli",
     "otherLeaders": "Abandi Bayobozi b'ikiliziya",
-    "seniorPastorName": "Rev. Jean Sengiyumva",
+    "seniorPastorName": "Intumwa Rev. Jean Sengiyumva",
     "seniorPastorTitle": "Umupasitoli Mukuru",
-    "seniorPastorBio": "Rev. Sengiyumva ni umusavyi w'Imana wihariye afite umwete wo gukorera mu ndimi nyinshi. Nubwo icyongereza si cyo cyambere, akorera mu gifaransa n'Ikinyarwanda kugira ngo agere n'imiryango yihariye. Intego ye yavukiye muri Yeremiya 20:9, atwara ijambo ry'Imana nk'umuriro mu magufwa ye. Ayobora ikiliziya yacu n'ubwenge, umwete, n'umutima wo gukorera mu muryango w'Abakristu i Edmonton n'akazi kacu k'ubwoba kwisi muri Afurika.",
+    "seniorPastorBio": "Intumwa Rev. Sengiyumva ni umusavyi w'Imana wihariye afite umwete wo gukorera mu ndimi nyinshi. Nubwo icyongereza si cyo cyambere, akorera mu gifaransa n'Ikinyarwanda kugira ngo agere n'imiryango yihariye. Intego ye yavukiye muri Yeremiya 20:9, atwara ijambo ry'Imana nk'umuriro mu magufwa ye. Ayobora ikiliziya yacu n'ubwenge, umwete, n'umutima wo gukorera mu muryango w'Abakristu i Edmonton n'akazi kacu k'ubwoba kwisi muri Afurika.",
     "pastorsDesc": "Itsinda ryacu ry'Abapasitoli rikorana n'Umupasitoli Mukuru kugira ngo rihe imbaraga z'umutima, gufashwa n'Abapasitoli, n'ubuyobozi mu minisiteri zitandukanye. Bashishikaye kwiyubaka umuryango w'Abakristu no gufasha intego y'ikiliziya.",
     "otherLeadersDesc": "Ikiliziya yacu yihaye abayobozi bashishikaye bakorera mu nshingano zitandukanye harimo abayobozi b'ubwoba, abadiyakoni, n'abakorera mu gukorera. Abasavyi b'ukuri bafasha gukomeza ibikorwa by'ikiliziya kandi bafasha intego yacu yo gukorera Imana n'umuryango wacu."
   },
@@ -385,7 +393,7 @@
     "introduction": {
       "title": "Intangiriro",
       "lastUpdated": "Ihindurwa ryanyuma",
-      "content": "International Anglican Revival Church of Edmonton ('twebwe', 'yacu', cyangwa 'twe') ishinzwe gukingira ubwigenge bwawe. Iyi Politiki y'Ubwigenge isobanura uko dukusanya, dukoresha, kwerekana, kandi dukingira amakuru yawe igihe wongeye gukoresha urubuga rwacu, gukoresha serivisi zacu, cyangwa gukorana natwe. Nyamuneka iyi politiki y'ubwigenge neza. Niba utemeye amabwiriza y'iyi politiki y'ubwigenge, nyamuneka ntukoreshe urubuga."
+      "content": "International Anglican Revival Ministries ('twebwe', 'yacu', cyangwa 'twe') ishinzwe gukingira ubwigenge bwawe. Iyi Politiki y'Ubwigenge isobanura uko dukusanya, dukoresha, kwerekana, kandi dukingira amakuru yawe igihe wongeye gukoresha urubuga rwacu, gukoresha serivisi zacu, cyangwa gukorana natwe. Nyamuneka iyi politiki y'ubwigenge neza. Niba utemeye amabwiriza y'iyi politiki y'ubwigenge, nyamuneka ntukoreshe urubuga."
     },
     "collection": {
       "title": "Amakuru Dukusanya",
@@ -461,7 +469,7 @@
       "title": "Twandikire",
       "content": [
         "Niba ufite ibibazo byose ku makuru y'iyi Politiki y'Ubwigenge cyangwa ushaka gukoresha uburenganzira bwawe bwo kwiyubaka, nyamuneka twandikire:",
-        "International Anglican Revival Church of Edmonton",
+        "International Anglican Revival Ministries",
         "6110 Fulton Road, Edmonton, AB T6A 3T3, Kanada",
         "Telefoni: +1 587-778-6406 cyangwa +1 825-461-7431",
         "Urashobora kandi gukoresha ipaji yacu y'Ubwoba kugira ngo ubone amakuru menshi."
@@ -474,7 +482,7 @@
     "introduction": {
       "title": "Intangiriro",
       "lastUpdated": "Ihindurwa ryanyuma",
-      "content": "Murakaza neza ku rubuga rw'International Anglican Revival Church of Edmonton. Binyuze mu kugera kandi gukoresha urubuga rwacu, wemera kandi wemera gukurikira amabwiriza n'ibyemezo by'iyi ntego. Niba utemeye gukurikira ibyo haruguru, nyamuneka ntukoreshe iyi serivisi."
+      "content": "Murakaza neza ku rubuga rw'International Anglican Revival Ministries. Binyuze mu kugera kandi gukoresha urubuga rwacu, wemera kandi wemera gukurikira amabwiriza n'ibyemezo by'iyi ntego. Niba utemeye gukurikira ibyo haruguru, nyamuneka ntukoreshe iyi serivisi."
     },
     "agreement": {
       "title": "Kwirirana n'Amabwiriza",
@@ -485,7 +493,7 @@
     "license": {
       "title": "Gukoresha License",
       "content": [
-        "Uruhushya rwatanzwe gukusanya kopi imwe y'ibikoresho ku rubuga rw'International Anglican Revival Church of Edmonton kugira ngo wiyubake, ntacyo gukoresha ubucuruzi gusa. Iki ni uruhushya, si kwimura umutwe, kandi binyuze mu ruhushya ntushobora:"
+        "Uruhushya rwatanzwe gukusanya kopi imwe y'ibikoresho ku rubuga rw'International Anglican Revival Ministries kugira ngo wiyubake, ntacyo gukoresha ubucuruzi gusa. Iki ni uruhushya, si kwimura umutwe, kandi binyuze mu ruhushya ntushobora:"
       ],
       "list": [
         "Guhindura cyangwa gukora kopi z'ibikoresho",
@@ -498,37 +506,37 @@
     "restrictions": {
       "title": "Ibyirirwa",
       "content": [
-        "Ibikoresho ku rubuga rw'International Anglican Revival Church of Edmonton bitangwa 'nk'uko biri'. International Anglican Revival Church of Edmonton ntitanga amasezerano, yerekanye cyangwa yerekanye, kandi binyuze mu ruhushya ikangiza kandi ikangiza amasezerano yose harimo, nta kwangirwa, amasezerano yerekanye cyangwa ibyemezo by'ubucuruzi, gukomeza mu ntego yihariye, cyangwa kutagira ubwoba bw'ubwoba cyangwa ikindi kwangirwa kw'uburenganzira."
+        "Ibikoresho ku rubuga rw'International Anglican Revival Ministries bitangwa 'nk'uko biri'. International Anglican Revival Ministries ntitanga amasezerano, yerekanye cyangwa yerekanye, kandi binyuze mu ruhushya ikangiza kandi ikangiza amasezerano yose harimo, nta kwangirwa, amasezerano yerekanye cyangwa ibyemezo by'ubucuruzi, gukomeza mu ntego yihariye, cyangwa kutagira ubwoba bw'ubwoba cyangwa ikindi kwangirwa kw'uburenganzira."
       ]
     },
     "disclaimer": {
       "title": "Kwanga",
       "content": [
-        "Ibikoresho bigaragara ku rubuga rw'International Anglican Revival Church of Edmonton bishobora kuba n'amakosa y'ubwoba, y'ubwoba, cyangwa y'amashusho. International Anglican Revival Church of Edmonton ntitanga amasezerano ko ibikoresho byose ku rubuga rwayo ni ukuri, byuzuye, cyangwa by'ubu. International Anglican Revival Church of Edmonton ishobora guhindura ibikoresho birimo ku rubuga rwayo igihe icyo ari cyo cyose nta kumenyesha."
+        "Ibikoresho bigaragara ku rubuga rw'International Anglican Revival Ministries bishobora kuba n'amakosa y'ubwoba, y'ubwoba, cyangwa y'amashusho. International Anglican Revival Ministries ntitanga amasezerano ko ibikoresho byose ku rubuga rwayo ni ukuri, byuzuye, cyangwa by'ubu. International Anglican Revival Ministries ishobora guhindura ibikoresho birimo ku rubuga rwayo igihe icyo ari cyo cyose nta kumenyesha."
       ]
     },
     "limitations": {
       "title": "Ibyangirwa",
       "content": [
-        "Nta gihe International Anglican Revival Church of Edmonton cyangwa abatanzi bayo bazaba bafite imbere (harimo, nta kwangirwa, imbere z'ubwoba bw'amakuru cyangwa inyungu, cyangwa bitewe n'ubwoba bw'ubucuruzi) bivuka binyuze mu gukoresha cyangwa kutagira ubushobozi bwo gukoresha ibikoresho ku rubuga rw'International Anglican Revival Church of Edmonton, n'iyo International Anglican Revival Church of Edmonton cyangwa umukoresha wemewe wabwiwe mu kanwa cyangwa mu makuru y'ubushobozi bwo kwangiza."
+        "Nta gihe International Anglican Revival Ministries cyangwa abatanzi bayo bazaba bafite imbere (harimo, nta kwangirwa, imbere z'ubwoba bw'amakuru cyangwa inyungu, cyangwa bitewe n'ubwoba bw'ubucuruzi) bivuka binyuze mu gukoresha cyangwa kutagira ubushobozi bwo gukoresha ibikoresho ku rubuga rw'International Anglican Revival Ministries, n'iyo International Anglican Revival Ministries cyangwa umukoresha wemewe wabwiwe mu kanwa cyangwa mu makuru y'ubushobozi bwo kwangiza."
       ]
     },
     "accuracy": {
       "title": "Ukuri kw'Ibikoresho",
       "content": [
-        "Ibikoresho bigaragara ku rubuga rw'International Anglican Revival Church of Edmonton bishobora kuba n'amakosa y'ubwoba, y'ubwoba, cyangwa y'amashusho. International Anglican Revival Church of Edmonton ntitanga amasezerano ko ibikoresho byose ku rubuga rwayo ni ukuri, byuzuye, cyangwa by'ubu. International Anglican Revival Church of Edmonton ishobora guhindura ibikoresho birimo ku rubuga rwayo igihe icyo ari cyo cyose nta kumenyesha."
+        "Ibikoresho bigaragara ku rubuga rw'International Anglican Revival Ministries bishobora kuba n'amakosa y'ubwoba, y'ubwoba, cyangwa y'amashusho. International Anglican Revival Ministries ntitanga amasezerano ko ibikoresho byose ku rubuga rwayo ni ukuri, byuzuye, cyangwa by'ubu. International Anglican Revival Ministries ishobora guhindura ibikoresho birimo ku rubuga rwayo igihe icyo ari cyo cyose nta kumenyesha."
       ]
     },
     "links": {
       "title": "Ihuza",
       "content": [
-        "International Anglican Revival Church of Edmonton ntiyongeye gusuzuma urubuga rwose ruhuza n'urubuga rwayo kandi ntitwiyubaka ibirimo urubuga rwohuza. Gushyira mu bikorwa ihuza ryose ntibisobanura kwemera na International Anglican Revival Church of Edmonton urubuga. Gukoresha urubuga rwohuza rwose ni ku bwoba bw'umukoresha."
+        "International Anglican Revival Ministries ntiyongeye gusuzuma urubuga rwose ruhuza n'urubuga rwayo kandi ntitwiyubaka ibirimo urubuga rwohuza. Gushyira mu bikorwa ihuza ryose ntibisobanura kwemera na International Anglican Revival Ministries urubuga. Gukoresha urubuga rwohuza rwose ni ku bwoba bw'umukoresha."
       ]
     },
     "modifications": {
       "title": "Guhindura",
       "content": [
-        "International Anglican Revival Church of Edmonton ishobora guhindura amabwiriza y'ubwoba y'urubuga rwayo igihe icyo ari cyo cyose nta kumenyesha. Binyuze mu gukoresha urubuga rwacu wemera gukurikira amabwiriza y'ubu y'ubwoba."
+        "International Anglican Revival Ministries ishobora guhindura amabwiriza y'ubwoba y'urubuga rwayo igihe icyo ari cyo cyose nta kumenyesha. Binyuze mu gukoresha urubuga rwacu wemera gukurikira amabwiriza y'ubu y'ubwoba."
       ]
     },
     "governing": {
@@ -541,7 +549,7 @@
       "title": "Amakuru yo Gukorana",
       "content": [
         "Niba ufite ibibazo byose ku makuru y'Amabwiriza n'Ibyemezo, nyamuneka twandikire:",
-        "International Anglican Revival Church of Edmonton",
+        "International Anglican Revival Ministries",
         "6110 Fulton Road, Edmonton, AB T6A 3T3, Kanada",
         "Telefoni: +1 587-778-6406 cyangwa +1 825-461-7431",
         "Urashobora kandi gukoresha ipaji yacu y'Ubwoba kugira ngo ubone amakuru menshi."

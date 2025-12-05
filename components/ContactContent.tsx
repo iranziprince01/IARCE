@@ -21,25 +21,25 @@ export default function ContactContent() {
       <PageHero
         title={t('title')}
         subtitle={t('subtitle')}
-        backgroundImage="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        backgroundImage="/images/foundation/002.jpg"
         backgroundImageAlt="Church community and contact"
       />
 
       {/* Contact Information & Form */}
       <section className="section-padding bg-gradient-to-br from-blue-50 via-white to-blue-50">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 px-4 sm:px-6">
             {/* Contact Information */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="space-y-8"
+              className="space-y-6 sm:space-y-8"
             >
-              <div className="bg-white rounded-xl p-6 shadow-md mb-6">
-                <h2 className="heading-secondary mb-4">{t('visit')}</h2>
-                <div className="space-y-4 text-lg text-gray-700">
+              <div className="bg-white rounded-xl p-4 sm:p-5 md:p-6 shadow-md mb-4 sm:mb-6">
+                <h2 className="heading-secondary mb-3 sm:mb-4">{t('visit')}</h2>
+                <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-gray-700">
                   <div>
                     <p>
                       <span className="font-semibold text-gold-600">
@@ -73,11 +73,11 @@ export default function ContactContent() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-md">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <div className="bg-white rounded-xl p-4 sm:p-5 md:p-6 shadow-md">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
                   {t('serviceTimes')}
                 </h3>
-                <ul className="space-y-2 text-lg text-gray-700">
+                <ul className="space-y-2 text-sm sm:text-base md:text-lg text-gray-700">
                   <li className="text-justify">{t('sunday')}</li>
                   <li className="text-justify">{t('wednesday')}</li>
                   <li className="text-justify">{t('thursday')}</li>
@@ -85,11 +85,11 @@ export default function ContactContent() {
               </div>
 
               {/* Google Maps Embed */}
-              <div className="mt-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <div className="mt-6 sm:mt-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
                   Find Us on Map
                 </h3>
-                <div className="w-full h-64 sm:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg border-2 border-gray-200">
+                <div className="w-full h-56 sm:h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg border-2 border-gray-200">
                   <iframe
                     width="100%"
                     height="100%"
@@ -98,7 +98,7 @@ export default function ContactContent() {
                     allowFullScreen
                     referrerPolicy="no-referrer-when-downgrade"
                     src={`https://maps.google.com/maps?q=${encodeURIComponent('6110 Fulton Road, Edmonton, AB T6A 3T3, Canada')}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
-                    title="International Anglican Revival Church of Edmonton Location - 6110 Fulton Road, Edmonton, AB T6A 3T3"
+                    title="International Anglican Revival Ministries Location - 6110 Fulton Road, Edmonton, AB T6A 3T3"
                   ></iframe>
                 </div>
                 <p className="text-sm text-gray-600 mt-2">
@@ -120,9 +120,9 @@ export default function ContactContent() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="bg-gradient-to-br from-gold-50 to-white p-8 rounded-xl shadow-lg"
+              className="bg-gradient-to-br from-gold-50 to-white p-4 sm:p-5 md:p-6 lg:p-8 rounded-xl shadow-lg"
             >
-              <h2 className="heading-secondary mb-6">Send us a Message</h2>
+              <h2 className="heading-secondary mb-4 sm:mb-5 md:mb-6">Send us a Message</h2>
               <ContactForm />
             </motion.div>
           </div>
@@ -140,17 +140,17 @@ export default function ContactContent() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="max-w-3xl mx-auto text-center"
+            className="max-w-3xl mx-auto text-center px-4 sm:px-6"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
               {t('supportMinistry')}
             </h2>
-            <p className="text-xl text-gold-100 leading-relaxed text-justify mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-gold-100 leading-relaxed text-justify mb-6 sm:mb-8">
               {t('supportMinistryDesc')}
             </p>
             <a
               href="#"
-              className="inline-block bg-white text-gold-600 hover:bg-gold-50 font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="inline-block bg-white text-gold-600 hover:bg-gold-50 font-semibold py-2.5 sm:py-3 px-6 sm:px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm sm:text-base"
             >
               {t('donateNow')}
             </a>
@@ -166,19 +166,19 @@ export default function ContactContent() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-center max-w-4xl mx-auto mb-12"
+            className="text-center max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12 px-4 sm:px-6"
           >
             <h2 className="heading-secondary">{t('eventsResources')}</h2>
-            <div className="bg-white rounded-xl p-6 shadow-md max-w-3xl mx-auto mt-4">
-              <p className="text-xl text-gray-700 leading-relaxed text-justify">
+            <div className="bg-white rounded-xl p-4 sm:p-5 md:p-6 shadow-md max-w-3xl mx-auto mt-3 sm:mt-4">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed text-justify">
                 {t('eventsResourcesDesc')}
               </p>
             </div>
           </motion.div>
 
           {/* Upcoming Events */}
-          <div className="mb-16">
-            <h3 className="heading-secondary text-center mb-8">
+          <div className="mb-10 sm:mb-12 md:mb-16 px-4 sm:px-6">
+            <h3 className="heading-secondary text-center mb-6 sm:mb-8">
               {t('upcomingEvents')}
             </h3>
             <div className="max-w-4xl mx-auto">
@@ -187,12 +187,12 @@ export default function ContactContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="bg-white rounded-xl shadow-lg p-8 text-center"
+                className="bg-white rounded-xl shadow-lg p-5 sm:p-6 md:p-8 text-center"
               >
-                <div className="mb-6 flex justify-center">
-                  <CalendarIcon className="w-20 h-20 text-gold-600" />
+                <div className="mb-4 sm:mb-5 md:mb-6 flex justify-center">
+                  <CalendarIcon className="w-16 h-16 sm:w-20 sm:h-20 text-gold-600" />
                 </div>
-                <p className="text-lg text-gray-600 leading-relaxed text-justify">
+                <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed text-justify">
                   {t('upcomingEventsDesc')}
                 </p>
               </motion.div>
@@ -200,9 +200,9 @@ export default function ContactContent() {
           </div>
 
           {/* Resources */}
-          <div className="max-w-4xl mx-auto">
-            <h3 className="heading-secondary text-center mb-8">Resources</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            <h3 className="heading-secondary text-center mb-6 sm:mb-8">Resources</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
               {[
                 {
                   title: t('resources.bibleStudy'),
@@ -231,15 +231,15 @@ export default function ContactContent() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
-                  className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+                  className="bg-white p-4 sm:p-5 md:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
                 >
-                  <div className="mb-4 flex justify-center">
-                    <resource.Icon className="w-12 h-12 text-gold-600" />
+                  <div className="mb-3 sm:mb-4 flex justify-center">
+                    <resource.Icon className="w-10 h-10 sm:w-12 sm:h-12 text-gold-600" />
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">
+                  <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
                     {resource.title}
                   </h4>
-                  <p className="text-gray-700 leading-relaxed text-justify">{resource.desc}</p>
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">{resource.desc}</p>
                 </motion.div>
               ))}
             </div>

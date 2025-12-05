@@ -17,7 +17,7 @@ export default function PrayerContent() {
       <PageHero
         title={t('title')}
         subtitle={t('subtitle')}
-        backgroundImage="https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        backgroundImage="/images/foundation/010.jpg"
         backgroundImageAlt="Church prayer ministry"
       />
 

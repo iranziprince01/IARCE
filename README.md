@@ -1,4 +1,4 @@
-# International Anglican Revival Church of Edmonton (IARCE) Website
+# International Anglican Revival Ministries (IARCE) Website
 
 A modern, multilingual church website built with Next.js 14, TypeScript, Tailwind CSS, and Framer Motion.
 
@@ -156,5 +156,5 @@ For questions or issues, please contact the church at:
 
 ## 📄 License
 
-© 2025 International Anglican Revival Church of Edmonton. All rights reserved.
+© 2025 International Anglican Revival Ministries. All rights reserved.
 

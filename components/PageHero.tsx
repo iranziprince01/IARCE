@@ -17,7 +17,7 @@ export default function PageHero({
   backgroundImageAlt,
 }: PageHeroProps) {
   return (
-    <section className="relative h-[50vh] min-h-[400px] md:h-[60vh] lg:h-[70vh] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[40vh] min-h-[300px] sm:h-[45vh] sm:min-h-[350px] md:h-[50vh] md:min-h-[400px] lg:h-[60vh] xl:h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -31,12 +31,12 @@ export default function PageHero({
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
         />
-        {/* Overlay with 60-70% opacity */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-blue-800/65 to-gold-600/60"></div>
+        {/* Overlay with increased opacity for better text visibility */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/85 via-blue-800/80 to-gold-600/75"></div>
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 w-full px-4 sm:px-6">
+      <div className="container-custom relative z-10 w-full px-4 sm:px-6 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -47,7 +47,7 @@ export default function PageHero({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-4 sm:mb-6 leading-tight drop-shadow-lg"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-white mb-3 sm:mb-4 md:mb-6 leading-tight drop-shadow-lg px-2"
           >
             {title}
           </motion.h1>
@@ -56,7 +56,7 @@ export default function PageHero({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/95 font-light max-w-3xl mx-auto drop-shadow-md"
+              className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-white/95 font-light max-w-3xl mx-auto drop-shadow-md px-2"
             >
               {subtitle}
             </motion.p>

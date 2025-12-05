@@ -29,7 +29,7 @@ export default async function LocaleLayout({
     '@context': 'https://schema.org',
     '@type': 'PlaceOfWorship',
     '@id': `https://iarce.org/${locale === 'en' ? '' : locale + '/'}`,
-    name: 'International Anglican Revival Church of Edmonton',
+    name: 'International Anglican Revival Ministries',
     alternateName: 'IARCE',
     description: 'A vibrant Christian community in Edmonton dedicated to spiritual growth, compassion, and service. Multilingual worship services in English and Kinyarwanda.',
     address: {

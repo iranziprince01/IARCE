@@ -7,9 +7,9 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   return {
-    title: 'Get Involved | International Anglican Revival Church of Edmonton',
+    title: 'Get Involved | International Anglican Revival Ministries',
     description:
-      'Get involved at International Anglican Revival Church of Edmonton through volunteering, becoming a member, joining prayer groups, or getting baptized.',
+      'Get involved at International Anglican Revival Ministries through volunteering, becoming a member, joining prayer groups, or getting baptized.',
   };
 }
 

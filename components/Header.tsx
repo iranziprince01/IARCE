@@ -36,6 +36,7 @@ export default function Header() {
     { key: 'about', href: getPath('about') },
     { key: 'ministries', href: getPath('ministries') },
     { key: 'sermons', href: getPath('sermons') },
+    { key: 'foundation', href: getPath('foundation') },
   ];
 
   const getInvolvedItems = [
@@ -69,34 +70,34 @@ export default function Header() {
             : 'bg-white/95 backdrop-blur-sm'
         }`}
       >
-      <nav className="container-custom py-3 md:py-4 px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8">
-        <div className="flex items-center justify-between w-full gap-4 lg:gap-8">
+      <nav className="container-custom py-2 sm:py-3 md:py-4 px-3 sm:px-4 md:px-6 lg:px-8">
+        <div className="flex items-center justify-between w-full gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8">
           {/* Logo and Name - Left Aligned */}
-                  <Link href={locale === defaultLocale ? '/' : `/${locale}`} className="flex items-center space-x-2 md:space-x-3 flex-shrink-0 -ml-2 sm:-ml-3 md:-ml-4 lg:-ml-6 xl:-ml-8">
-            <div className="relative w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex-shrink-0">
+          <Link href={locale === defaultLocale ? '/' : `/${locale}`} className="flex items-center space-x-1.5 sm:space-x-2 md:space-x-3 flex-shrink-0 min-w-0">
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex-shrink-0">
               <Image
-                src="/logos/800x800-web.svg"
-                alt="International Anglican Revival Church of Edmonton Logo"
+                src="/logos/website.webp"
+                alt="International Anglican Revival Ministries Logo"
                 fill
                 className="object-contain"
                 priority
               />
             </div>
-            <div className="hidden sm:block">
-              <h1 className="text-xs sm:text-xs md:text-sm font-extrabold text-gray-900 leading-tight max-w-[200px]">
-                International Anglican Revival Church of Edmonton
+            <div className="hidden sm:block min-w-0">
+              <h1 className="text-[10px] sm:text-xs md:text-sm font-extrabold text-gray-900 leading-tight max-w-[140px] sm:max-w-[160px] md:max-w-[180px] lg:max-w-[200px]">
+                International Anglican<br />Revival Ministries
               </h1>
             </div>
           </Link>
 
           {/* Desktop Navigation - Center */}
-          <div className="hidden lg:flex items-center space-x-1 xl:space-x-2 whitespace-nowrap flex-1 justify-center">
+          <div className="hidden lg:flex items-center space-x-1 xl:space-x-2 whitespace-nowrap flex-1 justify-center max-w-2xl mx-auto">
             {navItems.map((item) => (
               <Link
                 key={item.key}
                 href={item.href}
                 prefetch={true}
-                className={`px-3 py-2 rounded-lg transition-colors duration-200 text-sm font-bold ${
+                className={`px-2 xl:px-3 py-1.5 xl:py-2 rounded-lg transition-colors duration-200 text-xs xl:text-sm font-bold ${
                   isActive(item.href)
                     ? 'bg-gold-500 text-white'
                     : 'text-gray-700 hover:bg-gold-50 hover:text-gold-600'
@@ -112,16 +113,16 @@ export default function Header() {
               onMouseEnter={() => setIsGetInvolvedOpen(true)}
               onMouseLeave={() => setIsGetInvolvedOpen(false)}
             >
-                      <button
-                        className={`px-3 py-2 rounded-lg transition-colors duration-200 text-sm font-bold ${
-                          isActive(locale === defaultLocale ? '/get-involved' : `/${locale}/get-involved`)
-                            ? 'bg-gold-500 text-white'
-                            : 'text-gray-700 hover:bg-gold-50 hover:text-gold-600'
-                        }`}
-                      >
+              <button
+                className={`px-2 xl:px-3 py-1.5 xl:py-2 rounded-lg transition-colors duration-200 text-xs xl:text-sm font-bold ${
+                  isActive(locale === defaultLocale ? '/get-involved' : `/${locale}/get-involved`)
+                    ? 'bg-gold-500 text-white'
+                    : 'text-gray-700 hover:bg-gold-50 hover:text-gold-600'
+                }`}
+              >
                 {t('getInvolved')}
                 <svg
-                  className="inline-block ml-1 w-4 h-4"
+                  className="inline-block ml-1 w-3.5 h-3.5 xl:w-4 xl:h-4"
                   fill="none"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -148,37 +149,58 @@ export default function Header() {
               )}
             </div>
 
-                    <Link
-                      href={locale === defaultLocale ? '/contact' : `/${locale}/contact`}
-                      prefetch={true}
-                      className={`px-3 py-2 rounded-lg transition-colors duration-200 text-sm font-bold ${
-                        isActive(locale === defaultLocale ? '/contact' : `/${locale}/contact`)
-                          ? 'bg-gold-500 text-white'
-                          : 'text-gray-700 hover:bg-gold-50 hover:text-gold-600'
-                      }`}
-                    >
-                      {t('contact')}
-                    </Link>
-                  </div>
+              <Link
+                href={locale === defaultLocale ? '/contact' : `/${locale}/contact`}
+                prefetch={true}
+                className={`px-2 xl:px-3 py-1.5 xl:py-2 rounded-lg transition-colors duration-200 text-xs xl:text-sm font-bold ${
+                  isActive(locale === defaultLocale ? '/contact' : `/${locale}/contact`)
+                    ? 'bg-gold-500 text-white'
+                    : 'text-gray-700 hover:bg-gold-50 hover:text-gold-600'
+                }`}
+              >
+                {t('contact')}
+              </Link>
+            </div>
 
-                  {/* Donate and Language Switcher - Right Aligned */}
-                  <div className="hidden lg:flex items-center space-x-3 xl:space-x-4 flex-shrink-0 -mr-2 sm:-mr-3 md:-mr-4 lg:-mr-6 xl:-mr-8">
-                    <Link
-                      href={locale === defaultLocale ? '/donate' : `/${locale}/donate`}
-                      prefetch={true}
-              className="px-3 py-2 rounded-lg bg-gold-500 text-white hover:bg-gold-600 transition-colors duration-200 font-semibold text-sm shadow-md hover:shadow-lg"
+            {/* Donate and Language Switcher - Right Aligned */}
+            <div className="hidden lg:flex items-center space-x-2 xl:space-x-3 2xl:space-x-4 flex-shrink-0">
+              <Link
+                href={locale === defaultLocale ? '/donate' : `/${locale}/donate`}
+                prefetch={true}
+                className="group relative px-3 xl:px-4 py-2 xl:py-2.5 rounded-xl bg-gradient-to-r from-gold-500 via-gold-600 to-gold-500 text-white font-bold text-xs xl:text-sm shadow-lg hover:shadow-2xl hover:shadow-gold-500/50 transition-all duration-300 transform hover:scale-105 hover:-translate-y-0.5 overflow-hidden"
+              >
+                <span className="relative z-10 flex items-center gap-1 xl:gap-1.5">
+                  <svg className="w-3.5 h-3.5 xl:w-4 xl:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                  {t('donate')}
+                </span>
+                <span className="absolute inset-0 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              </Link>
+              <LanguageSwitcher />
+            </div>
+
+          {/* Mobile Menu Button and Actions */}
+          <div className="flex lg:hidden items-center space-x-2 sm:space-x-3">
+            <Link
+              href={locale === defaultLocale ? '/donate' : `/${locale}/donate`}
+              prefetch={true}
+              className="group relative px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg bg-gradient-to-r from-gold-500 via-gold-600 to-gold-500 text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden"
             >
-              {t('donate')}
+              <span className="relative z-10 flex items-center gap-1">
+                <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+                <span className="hidden sm:inline">{t('donate')}</span>
+              </span>
+              <span className="absolute inset-0 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </Link>
             <LanguageSwitcher />
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-gray-700 hover:text-gold-600"
-            aria-label="Toggle menu"
-          >
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2 text-gray-700 hover:text-gold-600"
+              aria-label="Toggle menu"
+            >
             <svg
               className="w-6 h-6"
               fill="none"
@@ -194,7 +216,8 @@ export default function Header() {
                 <path d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
-          </button>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -280,9 +303,15 @@ export default function Header() {
                         href={locale === defaultLocale ? '/donate' : `/${locale}/donate`}
                         prefetch={true}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="block px-4 py-3 rounded-lg bg-gold-500 text-white hover:bg-gold-600 transition-colors font-semibold text-center shadow-md"
+                        className="group relative block px-4 py-3 rounded-xl bg-gradient-to-r from-gold-500 via-gold-600 to-gold-500 text-white font-bold text-center shadow-lg hover:shadow-2xl hover:shadow-gold-500/50 transition-all duration-300 transform hover:scale-105 overflow-hidden"
                       >
-                        {t('donate')}
+                        <span className="relative z-10 flex items-center justify-center gap-2">
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                          </svg>
+                          {t('donate')}
+                        </span>
+                        <span className="absolute inset-0 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                       </Link>
 
               <div className="pt-2">

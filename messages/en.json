@@ -4,6 +4,7 @@
     "about": "About Us",
     "ministries": "Ministries",
     "sermons": "Sermons",
+    "foundation": "Foundation",
     "getInvolved": "Get Involved",
     "volunteer": "Volunteer",
     "becomeMember": "Become a Member",
@@ -31,12 +32,12 @@
     "subscribeDesc": "Get uplifting Sermons delivered to your inbox every week. Stay inspired and connected with God.",
     "emailPlaceholder": "Enter your email",
     "subscribeButton": "Subscribe",
-    "description": "International Anglican Revival Church of Edmonton - A vibrant Christian community dedicated to spiritual growth, compassion, and service.",
-    "copyright": "© {year} International Anglican Revival Church of Edmonton. All rights reserved.",
+    "description": "International Anglican Revival Ministries - A vibrant Christian community dedicated to spiritual growth, compassion, and service.",
+    "copyright": "© {year} International Anglican Revival Ministries. All rights reserved.",
     "addressLabel": "Address"
   },
   "home": {
-    "title": "Welcome to International Anglican Revival Church of Edmonton",
+    "title": "Welcome to International Anglican Revival Ministries",
     "subtitle": "A vibrant Christian community dedicated to spiritual growth, compassion, and service.",
     "cta": "Join Us This Sunday",
     "learnMore": "Learn More",
@@ -44,11 +45,18 @@
     "visit": "Visit Us",
     "worshipWithUs": "Worship With Us",
     "bibleVerse": "Come to me, all you who are weary and burdened, and I will give you rest.",
-    "bibleVerseRef": "— Matthew 11:28"
+    "bibleVerseRef": "— Matthew 11:28",
+    "welcomeGreeting": "Dear Beloved Community,",
+    "welcomeTitle1": "Welcome to",
+    "welcomeTitle2": "International Anglican Revival Ministries!",
+    "welcomeMessage1": "We are delighted and thankful to extend a warm welcome to you through this official website of International Anglican Revival Ministries. Whether this is your first visit to our online presence or you are already a valued member of our church family, please know that you are cherished, respected, and wholeheartedly welcomed here.",
+    "welcomeMessage2": "This digital platform serves as a place of encouragement, spiritual direction, and fellowship, helping us stay united in our faith journey.",
+    "welcomeMessage3": "We are committed to extending our ministry to communities near and far, sharing God's love and serving those in need with compassion and dedication.",
+    "pastorName": "Apostle Rev. Jean Nsengiyumva"
   },
   "about": {
     "title": "About Us",
-    "church": "The International Anglican Revival Church of Edmonton is a vibrant Christian community dedicated to spiritual growth, compassion, and service. We are an Anglican-Pentecostal/Protestant church committed to preaching the Gospel, nurturing families, and empowering believers for a purpose-driven life.",
+    "church": "The International Anglican Revival Ministries is a vibrant Christian community dedicated to spiritual growth, compassion, and service. We are an Anglican-Pentecostal/Protestant church committed to preaching the Gospel, nurturing families, and empowering believers for a purpose-driven life.",
     "congregation": "We serve a diverse congregation in Edmonton, including Canadians and African communities, offering worship services in English and Kinyarwanda.",
     "ministry": "Our ministry extends beyond Canada, partnering with churches in Africa and supporting vulnerable refugees, widows, orphans, and displaced families in Uganda, Kenya, Rwanda, and other regions.",
     "vision": "Vision",
@@ -64,8 +72,8 @@
       "Implement programs that serve refugees and vulnerable families in Africa."
     ],
     "leadership": "Our Leadership",
-    "pastor": "Rev. Jean Sengiyumva, Senior Pastor",
-    "pastorBio": "Rev. Sengiyumva is a dedicated servant of God with a passion for multi-lingual ministry. Although English is not his first language, he faithfully ministers in English and Kinyarwanda to reach and uplift diverse communities. His calling is rooted in Jeremiah 20:9, carrying God's Word like fire in his bones.",
+    "pastor": "Apostle Rev. Jean Sengiyumva, Senior Pastor",
+    "pastorBio": "Apostle Rev. Sengiyumva is a dedicated servant of God with a passion for multi-lingual ministry. Although English is not his first language, he faithfully ministers in English and Kinyarwanda to reach and uplift diverse communities. His calling is rooted in Jeremiah 20:9, carrying God's Word like fire in his bones.",
     "coreValues": "Our Core Values",
     "coreValuesDesc": "These fundamental values guide everything we do as a church community, shaping our mission, ministry, and relationships.",
     "values": [
@@ -101,7 +109,7 @@
       "We believe in the spiritual unity of believers in our Lord Jesus Christ."
     ],
     "history": "Our History",
-    "historyDesc": "The International Anglican Revival Church of Edmonton was established to serve the growing international and multicultural community in Edmonton, particularly those from African backgrounds seeking a place of worship that honors both Anglican tradition and Pentecostal expression.",
+    "historyDesc": "The International Anglican Revival Ministries was established to serve the growing international and multicultural community in Edmonton, particularly those from African backgrounds seeking a place of worship that honors both Anglican tradition and Pentecostal expression.",
     "historyContent": [
       "Founded with a vision to bridge cultures and languages, our church began as a small gathering of believers committed to sharing the Gospel in both English and Kinyarwanda.",
       "Over the years, we have grown into a vibrant community that serves not only the local Edmonton area but also extends our ministry to support vulnerable communities in Africa.",
@@ -191,7 +199,7 @@
       "communitySupportDesc": "Information about community services and support programs."
     },
     "getInvolved": "Get Involved",
-    "getInvolvedDesc": "We welcome volunteers who want to serve and make a difference in our community. Whether you're interested in music, children's ministry, outreach, or administration, there's a place for you to serve at International Anglican Revival Church of Edmonton."
+    "getInvolvedDesc": "We welcome volunteers who want to serve and make a difference in our community. Whether you're interested in music, children's ministry, outreach, or administration, there's a place for you to serve at International Anglican Revival Ministries."
   },
   "africa": {
     "title": "Our Work in Africa",
@@ -214,15 +222,15 @@
     "title": "Volunteer",
     "subtitle": "Serve in various ministries and make a difference in our community.",
     "opportunities": "Volunteer Opportunities",
-    "opportunitiesDesc": "We welcome volunteers who want to serve and make a difference in our community. Whether you're interested in music, children's ministry, outreach, or administration, there's a place for you to serve at International Anglican Revival Church of Edmonton.",
+    "opportunitiesDesc": "We welcome volunteers who want to serve and make a difference in our community. Whether you're interested in music, children's ministry, outreach, or administration, there's a place for you to serve at International Anglican Revival Ministries.",
     "ready": "Ready to Volunteer?",
     "readyDesc": "Fill out the form on the right to get started. We'll be in touch soon to discuss how you can serve in our community."
   },
   "membership": {
     "title": "Become a Member",
-    "subtitle": "Join our church family and become an official member of International Anglican Revival Church of Edmonton.",
+    "subtitle": "Join our church family and become an official member of International Anglican Revival Ministries.",
     "process": "Membership Process",
-    "processDesc": "Becoming a member of International Anglican Revival Church of Edmonton means committing to our community, mission, and vision. We welcome all who want to be part of our church family.",
+    "processDesc": "Becoming a member of International Anglican Revival Ministries means committing to our community, mission, and vision. We welcome all who want to be part of our church family.",
     "attend": "Attend Services",
     "attendDesc": "Regularly attend our worship services and get to know our community.",
     "class": "Membership Class",
@@ -286,37 +294,73 @@
     "whatToExpectDesc": "Our services are welcoming and inclusive, featuring inspiring messages, uplifting music, and warm fellowship. We offer worship in English and Kinyarwanda. Whether you're visiting for the first time or are a regular member, you'll find a place to belong and grow in faith."
   },
   "foundation": {
-    "title": "Shelter of Refugee Seniors International Ministries",
+    "title": "Shelter of Refugee Seniors International Ministries (SRSIM)",
     "subtitle": "Serving vulnerable refugees, seniors, and displaced families with compassion and dignity",
     "about": "About the Foundation",
     "aboutDesc": "Shelter of Refugee Seniors International Ministries (SRSIM) is a compassionate ministry dedicated to serving vulnerable refugees, seniors, and displaced families around the world. We provide essential support, resources, and hope to those who have been forced to flee their homes due to conflict, persecution, or natural disasters.",
     "donateNow": "Donate Now →",
     "volunteerNow": "Volunteer Now →",
     "mission": "Our Mission",
-    "missionText": "To provide shelter, support, and spiritual care to refugee seniors and displaced families, helping them rebuild their lives with dignity and hope while sharing the love of Christ.",
+    "missionText1": "Holistic care—physical, emotional, spiritual—for elderly refugees, offering shelter, health support, advocacy, and community integration.",
+    "missionText2": "Our mission is to safeguard the dignity and improve the quality of life of refugee seniors through shelter provision, access to healthcare, counseling, and empowerment, grounded in faith and compassion.",
+    "missionText3": "We commit to serving elderly refugees by offering safe lodging, nutritious food, social and spiritual support, and resources to help them rebuild hope and participate fully in society.",
     "vision": "Our Vision",
-    "visionText": "A world where every refugee senior and displaced family has access to safe shelter, essential resources, spiritual support, and the opportunity to rebuild their lives with dignity and hope.",
+    "visionText1": "A world where every elderly refugee lives with dignity, security, and peace, embraced by a supportive community.",
+    "visionText2": "To become a haven of hope and renewal for aging refugees, where care, compassion, and respect restore strength and belonging.",
+    "visionText3": "Where refugee seniors are empowered to live full, meaningful lives, free from fear and isolation.",
     "values": "Our Core Values",
     "valuesList": [
       {
         "title": "Compassion",
-        "desc": "We approach every person with empathy, understanding, and genuine care for their unique circumstances and needs."
+        "desc": "We serve with empathy and kindness, recognizing the unique struggles and dignity of every refugee senior."
       },
       {
         "title": "Dignity",
-        "desc": "We respect and honor the inherent worth of every individual, treating all with the respect they deserve."
+        "desc": "We uphold the inherent worth of each person, ensuring our elders are treated with respect, honor, and care—regardless of background or circumstance."
       },
       {
-        "title": "Service",
-        "desc": "We are committed to serving others selflessly, following Christ's example of servant leadership."
+        "title": "Faith in Action",
+        "desc": "Rooted in our spiritual beliefs, we translate our faith into tangible acts of service, offering hope, healing, and community to those in need."
+      }
+    ],
+    "recentActivities": "Some of Our Recent Activities",
+    "recentActivity1": "We have provided bed covers to 85 Refugee Seniors at Mbarara Refugee camp in Uganda. This cost us $1,000 USD.",
+    "challenges": "Challenges Faced by Elder Refugees",
+    "challengesList": [
+      {
+        "title": "High Vulnerability & Displacement Conditions",
+        "desc": "When conflict erupts (e.g. in North Kivu, DRC), older people are among those who suffer most. They often can't flee quickly and are exposed to danger. Many older people remain in hastily formed displacement sites or camps, or in temporary shelters like schools, often without basic facilities."
       },
       {
-        "title": "Hope",
-        "desc": "We provide not just material support, but also spiritual encouragement and hope for a better future."
+        "title": "Food Insecurity & Nutrition",
+        "desc": "Refugees older people often arrive without food or access to cooking supplies. Their nutritional needs are frequently unmet, especially if they have difficulty chewing, chronic illness, or need specialised diets."
       },
       {
-        "title": "Partnership",
-        "desc": "We work collaboratively with local communities, churches, and organizations to maximize our impact."
+        "title": "Health Issues, Chronic Disease & Medical Care Gaps",
+        "desc": "Refugees Older people often have pre-existing chronic health conditions (e.g. hypertension, arthritis) that need ongoing care and medication. Conflict and displacement aggravate these. Access to clean water and sanitation is a major challenge; poor water increases risk of waterborne diseases and cholera. Health services in camps often do not have specialised geriatric care or services adapted to older people's mobility or sensory impairments."
+      },
+      {
+        "title": "Shelter, Safety and Living Conditions",
+        "desc": "Shelters can be inadequate (leaking, crowded, poorly insulated, not adapted to mobility limitations). Sanitation facilities (latrines, toilets) may be hard to reach or use for those who are weak or have limited mobility. Raised seats or facilities far away are a problem."
+      },
+      {
+        "title": "Social Isolation, Protection, and Dignity",
+        "desc": "Elder refugees often means loss of family or community support networks. Older people are alone and dependent on others. There are risks of neglect, abuse (verbal, physical, sexual) especially for older women. Some reports mention that elderly in camps feel less respected, more marginalized. Mental health—trauma, grief, loss, uncertainty—these are major issues."
+      }
+    ],
+    "proposedSolutions": "Our Proposed Solutions",
+    "solutionsList": [
+      {
+        "title": "Advocacy for Refugee Seniors",
+        "desc": "We advocate for the rights and needs of refugee seniors, ensuring their voices are heard and their dignity is protected."
+      },
+      {
+        "title": "Fundraising for Financial Means",
+        "desc": "We work to secure financial resources to support our ministries and provide essential services to refugee seniors."
+      },
+      {
+        "title": "Spiritual Encouragement",
+        "desc": "We provide spiritual encouragement to help refugee seniors finish well, offering hope, comfort, and strength through faith."
       }
     ],
     "programs": "Our Programs",
@@ -376,9 +420,9 @@
     "seniorPastor": "Senior Pastor",
     "pastors": "Pastors",
     "otherLeaders": "Other Church Leaders",
-    "seniorPastorName": "Rev. Jean Sengiyumva",
+    "seniorPastorName": "Apostle Rev. Jean Sengiyumva",
     "seniorPastorTitle": "Senior Pastor",
-    "seniorPastorBio": "Rev. Sengiyumva is a dedicated servant of God with a passion for multi-lingual ministry. Although English is not his first language, he faithfully ministers in English and Kinyarwanda to reach and uplift diverse communities. His calling is rooted in Jeremiah 20:9, carrying God's Word like fire in his bones. He leads our church with wisdom, compassion, and a heart for serving both the local community in Edmonton and our global mission work in Africa.",
+    "seniorPastorBio": "Apostle Rev. Sengiyumva is a dedicated servant of God with a passion for multi-lingual ministry. Although English is not his first language, he faithfully ministers in English and Kinyarwanda to reach and uplift diverse communities. His calling is rooted in Jeremiah 20:9, carrying God's Word like fire in his bones. He leads our church with wisdom, compassion, and a heart for serving both the local community in Edmonton and our global mission work in Africa.",
     "pastorsDesc": "Our pastoral team works alongside the Senior Pastor to provide spiritual guidance, pastoral care, and leadership in various ministries. They are committed to nurturing the congregation and supporting the church's mission.",
     "otherLeadersDesc": "Our church is blessed with dedicated leaders who serve in various capacities including ministry directors, deacons, and administrative staff. These faithful servants help ensure the smooth operation of our church and support our mission to serve God and our community."
   },
@@ -388,7 +432,7 @@
     "introduction": {
       "title": "Introduction",
       "lastUpdated": "Last updated",
-      "content": "International Anglican Revival Church of Edmonton ('we', 'our', or 'us') is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our services, or interact with us. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site."
+      "content": "International Anglican Revival Ministries ('we', 'our', or 'us') is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our services, or interact with us. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site."
     },
     "collection": {
       "title": "Information We Collect",
@@ -464,7 +508,7 @@
       "title": "Contact Us",
       "content": [
         "If you have any questions about this Privacy Policy or wish to exercise your privacy rights, please contact us at:",
-        "International Anglican Revival Church of Edmonton",
+        "International Anglican Revival Ministries",
         "6110 Fulton Road, Edmonton, AB T6A 3T3, Canada",
         "Phone: +1 587-778-6406 or +1 825-461-7431",
         "You can also visit our Contact page for more information."
@@ -477,7 +521,7 @@
     "introduction": {
       "title": "Introduction",
       "lastUpdated": "Last updated",
-      "content": "Welcome to the International Anglican Revival Church of Edmonton website. By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service."
+      "content": "Welcome to the International Anglican Revival Ministries website. By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service."
     },
     "agreement": {
       "title": "Agreement to Terms",
@@ -488,7 +532,7 @@
     "license": {
       "title": "Use License",
       "content": [
-        "Permission is granted to temporarily download one copy of the materials on International Anglican Revival Church of Edmonton's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:"
+        "Permission is granted to temporarily download one copy of the materials on International Anglican Revival Ministries's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:"
       ],
       "list": [
         "Modify or copy the materials",
@@ -501,37 +545,37 @@
     "restrictions": {
       "title": "Restrictions",
       "content": [
-        "The materials on International Anglican Revival Church of Edmonton's website are provided on an 'as is' basis. International Anglican Revival Church of Edmonton makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights."
+        "The materials on International Anglican Revival Ministries's website are provided on an 'as is' basis. International Anglican Revival Ministries makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights."
       ]
     },
     "disclaimer": {
       "title": "Disclaimer",
       "content": [
-        "The materials appearing on International Anglican Revival Church of Edmonton's website could include technical, typographical, or photographic errors. International Anglican Revival Church of Edmonton does not warrant that any of the materials on its website are accurate, complete, or current. International Anglican Revival Church of Edmonton may make changes to the materials contained on its website at any time without notice."
+        "The materials appearing on International Anglican Revival Ministries's website could include technical, typographical, or photographic errors. International Anglican Revival Ministries does not warrant that any of the materials on its website are accurate, complete, or current. International Anglican Revival Ministries may make changes to the materials contained on its website at any time without notice."
       ]
     },
     "limitations": {
       "title": "Limitations",
       "content": [
-        "In no event shall International Anglican Revival Church of Edmonton or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on International Anglican Revival Church of Edmonton's website, even if International Anglican Revival Church of Edmonton or an authorized representative has been notified orally or in writing of the possibility of such damage."
+        "In no event shall International Anglican Revival Ministries or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on International Anglican Revival Ministries's website, even if International Anglican Revival Ministries or an authorized representative has been notified orally or in writing of the possibility of such damage."
       ]
     },
     "accuracy": {
       "title": "Accuracy of Materials",
       "content": [
-        "The materials appearing on International Anglican Revival Church of Edmonton's website may include technical, typographical, or photographic errors. International Anglican Revival Church of Edmonton does not warrant that any of the materials on its website are accurate, complete, or current. International Anglican Revival Church of Edmonton may make changes to the materials contained on its website at any time without notice."
+        "The materials appearing on International Anglican Revival Ministries's website may include technical, typographical, or photographic errors. International Anglican Revival Ministries does not warrant that any of the materials on its website are accurate, complete, or current. International Anglican Revival Ministries may make changes to the materials contained on its website at any time without notice."
       ]
     },
     "links": {
       "title": "Links",
       "content": [
-        "International Anglican Revival Church of Edmonton has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by International Anglican Revival Church of Edmonton of the site. Use of any such linked website is at the user's own risk."
+        "International Anglican Revival Ministries has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by International Anglican Revival Ministries of the site. Use of any such linked website is at the user's own risk."
       ]
     },
     "modifications": {
       "title": "Modifications",
       "content": [
-        "International Anglican Revival Church of Edmonton may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service."
+        "International Anglican Revival Ministries may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service."
       ]
     },
     "governing": {
@@ -544,7 +588,7 @@
       "title": "Contact Information",
       "content": [
         "If you have any questions about these Terms & Conditions, please contact us at:",
-        "International Anglican Revival Church of Edmonton",
+        "International Anglican Revival Ministries",
         "6110 Fulton Road, Edmonton, AB T6A 3T3, Canada",
         "Phone: +1 587-778-6406 or +1 825-461-7431",
         "You can also visit our Contact page for more information."

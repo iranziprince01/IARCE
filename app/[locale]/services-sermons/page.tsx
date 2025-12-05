@@ -7,9 +7,9 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   return {
-    title: 'Services and Sermons | International Anglican Revival Church of Edmonton',
+    title: 'Services and Sermons | International Anglican Revival Ministries',
     description:
-      'Join us for worship services, prayer meetings, Bible study, and access our latest sermons and messages at International Anglican Revival Church of Edmonton.',
+      'Join us for worship services, prayer meetings, Bible study, and access our latest sermons and messages at International Anglican Revival Ministries.',
   };
 }
 

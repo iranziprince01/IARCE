@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 import Hero from '@/components/Hero';
+import WelcomeMessage from '@/components/WelcomeMessage';
 import AboutPreview from '@/components/AboutPreview';
 import MinistriesPreview from '@/components/MinistriesPreview';
 import ServiceTimes from '@/components/ServiceTimes';
@@ -20,14 +21,14 @@ export async function generateMetadata({
   return {
     metadataBase: new URL('https://iarce.org'),
     title: {
-      default: 'International Anglican Revival Church of Edmonton | IARCE',
-      template: '%s | International Anglican Revival Church of Edmonton',
+      default: 'International Anglican Revival Ministries | IARCE',
+      template: '%s | International Anglican Revival Ministries',
     },
     description:
       'A vibrant Christian community in Edmonton, Alberta, dedicated to spiritual growth, compassion, and service. Multilingual worship services in English and Kinyarwanda. Join us for Sunday worship, community outreach, and refugee support programs.',
     keywords: [
       'Anglican church Edmonton',
-      'International Anglican Revival Church',
+      'International Anglican Revival Ministries',
       'Pentecostal Anglican church',
       'Multilingual church Edmonton',
       'African churches in Edmonton',
@@ -45,26 +46,26 @@ export async function generateMetadata({
       'Rwandan church Canada',
       'East African church Edmonton',
     ],
-    authors: [{ name: 'International Anglican Revival Church of Edmonton' }],
-    creator: 'International Anglican Revival Church of Edmonton',
-    publisher: 'International Anglican Revival Church of Edmonton',
+    authors: [{ name: 'International Anglican Revival Ministries' }],
+    creator: 'International Anglican Revival Ministries',
+    publisher: 'International Anglican Revival Ministries',
     formatDetection: {
       email: false,
       address: false,
       telephone: false,
     },
     openGraph: {
-      title: 'International Anglican Revival Church of Edmonton',
+      title: 'International Anglican Revival Ministries',
       description:
         'A vibrant Christian community in Edmonton dedicated to spiritual growth, compassion, and service. Multilingual worship services in English and Kinyarwanda.',
       url: canonicalUrl,
-      siteName: 'International Anglican Revival Church of Edmonton',
+      siteName: 'International Anglican Revival Ministries',
       images: [
         {
           url: ogImage,
           width: 1200,
           height: 630,
-          alt: 'International Anglican Revival Church of Edmonton',
+          alt: 'International Anglican Revival Ministries',
         },
       ],
       locale: locale === 'en' ? 'en_CA' : locale,
@@ -72,7 +73,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'International Anglican Revival Church of Edmonton',
+      title: 'International Anglican Revival Ministries',
       description:
         'A vibrant Christian community in Edmonton dedicated to spiritual growth, compassion, and service.',
       images: [ogImage],
@@ -107,6 +108,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <WelcomeMessage />
       <AboutPreview />
       <MinistriesPreview />
       <ServiceTimes />

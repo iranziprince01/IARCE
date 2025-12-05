@@ -10,9 +10,9 @@ export async function generateMetadata({
   
   return {
     metadataBase: new URL('https://iarce.org'),
-    title: 'Contact Us | International Anglican Revival Church of Edmonton',
+    title: 'Contact Us | International Anglican Revival Ministries',
     description:
-      'Get in touch with International Anglican Revival Church of Edmonton. Visit us at 6110 Fulton Road, Edmonton, AB T6A 3T3. Phone: +1 587-778-6406 or +1 825-461-7431. Sunday services at 10:00 AM.',
+      'Get in touch with International Anglican Revival Ministries. Visit us at 6110 Fulton Road, Edmonton, AB T6A 3T3. Phone: +1 587-778-6406 or +1 825-461-7431. Sunday services at 10:00 AM.',
     keywords: [
       'Contact church Edmonton',
       'Church address Edmonton',
@@ -22,9 +22,9 @@ export async function generateMetadata({
       'Anglican church contact',
     ],
     openGraph: {
-      title: 'Contact Us | International Anglican Revival Church of Edmonton',
+      title: 'Contact Us | International Anglican Revival Ministries',
       description:
-        'Get in touch with International Anglican Revival Church of Edmonton. Visit us at 6110 Fulton Road, Edmonton, AB T6A 3T3.',
+        'Get in touch with International Anglican Revival Ministries. Visit us at 6110 Fulton Road, Edmonton, AB T6A 3T3.',
       url: canonicalUrl,
       type: 'website',
       locale: locale === 'en' ? 'en_CA' : locale,

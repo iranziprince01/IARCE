@@ -42,7 +42,7 @@ export default function ServicesSermonsContent() {
       <PageHero
         title={tServicesSermons('title')}
         subtitle={tServicesSermons('subtitle')}
-        backgroundImage="https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        backgroundImage="/images/foundation/004.jpg"
         backgroundImageAlt="Church worship service"
       />
 

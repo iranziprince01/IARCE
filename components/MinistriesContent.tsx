@@ -37,7 +37,7 @@ export default function MinistriesContent() {
       <PageHero
         title={t('title')}
         subtitle={t('subtitle')}
-        backgroundImage="https://images.unsplash.com/photo-1507692049790-de58290a4334?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        backgroundImage="/images/foundation/002.jpg"
         backgroundImageAlt="Church ministries and service"
       />
 
@@ -48,11 +48,11 @@ export default function MinistriesContent() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-center max-w-4xl mx-auto mb-12"
+            className="text-center max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12 px-4 sm:px-6"
           >
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8 px-4 sm:px-6">
             {ministries.map((ministry, index) => (
               <motion.div
                 key={ministry.key}
@@ -63,15 +63,15 @@ export default function MinistriesContent() {
                 className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden"
               >
                 <div
-                  className={`h-32 bg-gradient-to-r ${ministry.color} flex items-center justify-center`}
+                  className={`h-24 sm:h-28 md:h-32 bg-gradient-to-r ${ministry.color} flex items-center justify-center`}
                 >
-                  <ministry.Icon className="w-16 h-16 text-white" />
+                  <ministry.Icon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-white" />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                <div className="p-4 sm:p-5 md:p-6">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">
                     {t(ministry.key)}
                   </h3>
-                  <p className="text-gray-700 leading-relaxed text-justify">
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
                     {t(`${ministry.key}Desc`)}
                   </p>
                 </div>
@@ -85,18 +85,18 @@ export default function MinistriesContent() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="mt-16 space-y-8"
+            className="mt-10 sm:mt-12 md:mt-16 space-y-6 sm:space-y-8 px-4 sm:px-6"
             id="refugee"
           >
-            <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-gold-500 rounded-xl p-8 text-white shadow-xl">
-              <h2 className="text-3xl font-bold mb-4">{t('refugeeSupport')}</h2>
-              <p className="text-lg text-gold-100 leading-relaxed text-justify mb-6">
+            <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-gold-500 rounded-xl p-5 sm:p-6 md:p-8 text-white shadow-xl">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">{t('refugeeSupport')}</h2>
+              <p className="text-sm sm:text-base md:text-lg text-gold-100 leading-relaxed text-justify mb-4 sm:mb-5 md:mb-6">
                 {t('refugeeSupportDesc')}
               </p>
               <Link
                 href={getPath('/foundation')}
                 prefetch={true}
-                className="inline-block bg-white text-gold-600 hover:bg-gold-50 font-semibold py-3 px-6 rounded-lg transition-all duration-300"
+                className="inline-block bg-white text-gold-600 hover:bg-gold-50 font-semibold py-2.5 sm:py-3 px-5 sm:px-6 rounded-lg transition-all duration-300 text-sm sm:text-base"
               >
                 {t('getInvolved')}
               </Link>

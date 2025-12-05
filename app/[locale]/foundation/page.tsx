@@ -8,12 +8,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   return {
     title:
-      'Shelter of Refugee Seniors International Ministries | International Anglican Revival Church of Edmonton',
+      'Shelter of Refugee Seniors International Ministries (SRSIM) | International Anglican Revival Ministries',
     description:
       'Learn about Shelter of Refugee Seniors International Ministries (SRSIM) - serving vulnerable refugees, seniors, and displaced families with compassion and dignity.',
     openGraph: {
       title:
-        'Shelter of Refugee Seniors International Ministries | International Anglican Revival Church of Edmonton',
+        'Shelter of Refugee Seniors International Ministries (SRSIM) | International Anglican Revival Ministries',
       description:
         'Serving vulnerable refugees, seniors, and displaced families with compassion and dignity.',
       type: 'website',

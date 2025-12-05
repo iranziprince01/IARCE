@@ -21,7 +21,7 @@ export default function AboutContent() {
       {/* Hero Section */}
       <PageHero
         title={t('title')}
-        backgroundImage="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        backgroundImage="/images/foundation/002.jpg"
         backgroundImageAlt="Church community and fellowship"
       />
 
@@ -29,15 +29,15 @@ export default function AboutContent() {
       <section className="section-padding bg-white" id="about">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 px-4 sm:px-6">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="bg-white rounded-xl p-6 md:p-8 shadow-md"
+                className="bg-white rounded-xl p-4 sm:p-5 md:p-6 lg:p-8 shadow-md"
               >
-                <p className="text-lg text-gray-700 leading-relaxed text-justify">
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-justify">
                   {t('church')}
                 </p>
               </motion.div>
@@ -46,9 +46,9 @@ export default function AboutContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="bg-white rounded-xl p-6 md:p-8 shadow-md"
+                className="bg-white rounded-xl p-4 sm:p-5 md:p-6 lg:p-8 shadow-md"
               >
-                <p className="text-lg text-gray-700 leading-relaxed text-justify">
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-justify">
                   {t('congregation')}
                 </p>
               </motion.div>
@@ -57,9 +57,9 @@ export default function AboutContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-white rounded-xl p-6 md:p-8 shadow-md md:col-span-2"
+                className="bg-white rounded-xl p-4 sm:p-5 md:p-6 lg:p-8 shadow-md md:col-span-2"
               >
-                <p className="text-lg text-gray-700 leading-relaxed text-justify">
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-justify">
                   {t('ministry')}
                 </p>
               </motion.div>
@@ -71,18 +71,18 @@ export default function AboutContent() {
       {/* Vision & Mission */}
       <section className="section-padding bg-gradient-to-br from-blue-50 via-white to-gold-50" id="mission">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto space-y-12">
+          <div className="max-w-4xl mx-auto space-y-8 sm:space-y-10 md:space-y-12 px-4 sm:px-6">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="heading-secondary text-gold-600 mb-4">
+              <h2 className="heading-secondary text-gold-600 mb-3 sm:mb-4">
                 {t('vision')}
               </h2>
-              <div className="bg-white rounded-xl p-6 md:p-8 shadow-md">
-                <p className="text-lg text-gray-700 leading-relaxed text-justify">
+              <div className="bg-white rounded-xl p-4 sm:p-5 md:p-6 lg:p-8 shadow-md">
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-justify">
                   {t('visionText')}
                 </p>
               </div>
@@ -94,11 +94,11 @@ export default function AboutContent() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h2 className="heading-secondary text-gold-600 mb-4">
+              <h2 className="heading-secondary text-gold-600 mb-3 sm:mb-4">
                 {t('mission')}
               </h2>
-              <div className="bg-white rounded-xl p-6 md:p-8 shadow-md">
-                <p className="text-lg text-gray-700 leading-relaxed text-justify">
+              <div className="bg-white rounded-xl p-4 sm:p-5 md:p-6 lg:p-8 shadow-md">
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-justify">
                   {t('missionText')}
                 </p>
               </div>
@@ -116,12 +116,12 @@ export default function AboutContent() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="text-center mb-12"
+              className="text-center mb-8 sm:mb-10 md:mb-12 px-4 sm:px-6"
             >
-              <h2 className="heading-secondary text-blue-600 mb-4">
+              <h2 className="heading-secondary text-blue-600 mb-3 sm:mb-4">
                 {t('coreValues')}
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto mb-6 sm:mb-8">
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}

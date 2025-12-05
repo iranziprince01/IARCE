@@ -34,11 +34,11 @@ export default function MinistriesPreview() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-10 md:mb-12 px-4 sm:px-6"
         >
           <h2 className="heading-secondary">{t('title')}</h2>
         </motion.div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 px-4 sm:px-6">
           {ministries.map((ministry, index) => (
             <motion.div
               key={ministry.key}
@@ -46,21 +46,21 @@ export default function MinistriesPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow"
+              className="bg-white p-4 sm:p-5 md:p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow"
             >
-              <div className="mb-4 flex justify-center">
-                <ministry.Icon className="w-12 h-12 text-gold-600" />
+              <div className="mb-3 sm:mb-4 flex justify-center">
+                <ministry.Icon className="w-10 h-10 sm:w-12 sm:h-12 text-gold-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
                 {t(`${ministry.key}`)}
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                 {t(`${ministry.key}Desc`)}
               </p>
             </motion.div>
           ))}
         </div>
-        <div className="mt-8 text-center">
+        <div className="mt-6 sm:mt-8 text-center px-4 sm:px-6">
           <Link 
             href={locale === defaultLocale ? '/ministries' : `/${locale}/ministries`}
             prefetch={true}

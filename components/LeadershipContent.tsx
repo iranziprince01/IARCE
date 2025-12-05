@@ -18,7 +18,7 @@ export default function LeadershipContent() {
       <PageHero
         title={t('title')}
         subtitle={t('subtitle')}
-        backgroundImage="https://images.unsplash.com/photo-1529070538774-1843d3265d82?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        backgroundImage="/images/foundation/010.jpg"
         backgroundImageAlt="Church leadership and pastoral team"
       />
 
@@ -31,14 +31,14 @@ export default function LeadershipContent() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="text-center mb-12"
+              className="text-center mb-8 sm:mb-10 md:mb-12 px-4 sm:px-6"
             >
-              <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 bg-gradient-to-br from-gold-500 to-gold-600 rounded-full flex items-center justify-center">
-                  <UserIcon className="w-10 h-10 text-white" />
+              <div className="flex justify-center mb-4 sm:mb-5 md:mb-6">
+                <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-br from-gold-500 to-gold-600 rounded-full flex items-center justify-center">
+                  <UserIcon className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-white" />
                 </div>
               </div>
-              <h2 className="heading-secondary text-gold-600 mb-4">
+              <h2 className="heading-secondary text-gold-600 mb-3 sm:mb-4">
                 {t('seniorPastor')}
               </h2>
             </motion.div>
@@ -48,15 +48,15 @@ export default function LeadershipContent() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="bg-gradient-to-br from-blue-50 to-gold-50 rounded-2xl p-8 md:p-12 shadow-lg"
+              className="bg-gradient-to-br from-blue-50 to-gold-50 rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 lg:p-12 shadow-lg mx-4 sm:mx-6"
             >
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                 {t('seniorPastorName')}
               </h3>
-              <p className="text-lg text-gold-600 font-semibold mb-6">
+              <p className="text-base sm:text-lg text-gold-600 font-semibold mb-4 sm:mb-5 md:mb-6">
                 {t('seniorPastorTitle')}
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed text-justify">
+              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-justify">
                 {t('seniorPastorBio')}
               </p>
             </motion.div>
@@ -73,18 +73,18 @@ export default function LeadershipContent() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="text-center mb-12"
+              className="text-center mb-8 sm:mb-10 md:mb-12 px-4 sm:px-6"
             >
-              <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
-                  <UserGroupIcon className="w-10 h-10 text-white" />
+              <div className="flex justify-center mb-4 sm:mb-5 md:mb-6">
+                <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
+                  <UserGroupIcon className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-white" />
                 </div>
               </div>
-              <h2 className="heading-secondary text-blue-600 mb-4">
+              <h2 className="heading-secondary text-blue-600 mb-3 sm:mb-4">
                 {t('pastors')}
               </h2>
-              <div className="bg-white rounded-xl p-6 md:p-8 shadow-md max-w-2xl mx-auto">
-                <p className="text-lg text-gray-700 leading-relaxed text-justify">
+              <div className="bg-white rounded-xl p-4 sm:p-5 md:p-6 lg:p-8 shadow-md max-w-2xl mx-auto">
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-justify">
                   {t('pastorsDesc')}
                 </p>
               </div>
@@ -95,9 +95,9 @@ export default function LeadershipContent() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="bg-white rounded-2xl p-8 md:p-12 shadow-lg"
+              className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 lg:p-12 shadow-lg mx-4 sm:mx-6"
             >
-              <p className="text-lg text-gray-700 leading-relaxed text-justify">
+              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-justify">
                 {t('pastorsDesc')}
               </p>
             </motion.div>
@@ -114,14 +114,14 @@ export default function LeadershipContent() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="text-center mb-12"
+              className="text-center mb-8 sm:mb-10 md:mb-12 px-4 sm:px-6"
             >
-              <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 bg-gradient-to-br from-gold-500 to-blue-600 rounded-full flex items-center justify-center">
-                  <BriefcaseIcon className="w-10 h-10 text-white" />
+              <div className="flex justify-center mb-4 sm:mb-5 md:mb-6">
+                <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-br from-gold-500 to-blue-600 rounded-full flex items-center justify-center">
+                  <BriefcaseIcon className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-white" />
                 </div>
               </div>
-              <h2 className="heading-secondary text-gray-900 mb-4">
+              <h2 className="heading-secondary text-gray-900 mb-3 sm:mb-4">
                 {t('otherLeaders')}
               </h2>
             </motion.div>
@@ -131,9 +131,9 @@ export default function LeadershipContent() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="bg-gradient-to-br from-blue-50 to-gold-50 rounded-2xl p-8 md:p-12 shadow-lg"
+              className="bg-gradient-to-br from-blue-50 to-gold-50 rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 lg:p-12 shadow-lg mx-4 sm:mx-6"
             >
-              <p className="text-lg text-gray-700 leading-relaxed text-justify">
+              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-justify">
                 {t('otherLeadersDesc')}
               </p>
             </motion.div>

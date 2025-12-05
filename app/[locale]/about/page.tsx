@@ -11,9 +11,9 @@ export async function generateMetadata({
   
   return {
     metadataBase: new URL('https://iarce.org'),
-    title: 'About Us | International Anglican Revival Church of Edmonton',
+    title: 'About Us | International Anglican Revival Ministries',
     description:
-      'Learn about International Anglican Revival Church of Edmonton - a vibrant Christian community in Edmonton, Alberta, dedicated to spiritual growth, compassion, and service. Meet our leadership, discover our mission and vision, and learn about our core values.',
+      'Learn about International Anglican Revival Ministries - a vibrant Christian community in Edmonton, Alberta, dedicated to spiritual growth, compassion, and service. Meet our leadership, discover our mission and vision, and learn about our core values.',
     keywords: [
       'About Anglican church Edmonton',
       'Church leadership Edmonton',
@@ -23,9 +23,9 @@ export async function generateMetadata({
       'Edmonton church history',
     ],
     openGraph: {
-      title: 'About Us | International Anglican Revival Church of Edmonton',
+      title: 'About Us | International Anglican Revival Ministries',
       description:
-        'Learn about International Anglican Revival Church of Edmonton - a vibrant Christian community in Edmonton dedicated to spiritual growth, compassion, and service.',
+        'Learn about International Anglican Revival Ministries - a vibrant Christian community in Edmonton dedicated to spiritual growth, compassion, and service.',
       url: canonicalUrl,
       type: 'website',
       locale: locale === 'en' ? 'en_CA' : locale,

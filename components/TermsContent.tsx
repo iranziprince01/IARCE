@@ -77,7 +77,7 @@ export default function TermsContent() {
       <PageHero
         title={t('title')}
         subtitle={t('subtitle')}
-        backgroundImage="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        backgroundImage="/images/foundation/003.jpg"
         backgroundImageAlt="Terms and conditions"
       />
 

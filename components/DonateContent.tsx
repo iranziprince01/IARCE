@@ -23,7 +23,7 @@ export default function DonateContent() {
       <PageHero
         title={t('title')}
         subtitle={t('subtitle')}
-        backgroundImage="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        backgroundImage="/images/foundation/008.jpg"
         backgroundImageAlt="Church giving and donation"
       />
 
@@ -34,50 +34,50 @@ export default function DonateContent() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-12"
+            className="text-center mb-8 sm:mb-10 md:mb-12 px-4 sm:px-6"
           >
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 px-4 sm:px-6">
             {/* Left Side - Donation Form */}
             <div>
               <DonationForm />
             </div>
 
             {/* Right Side - Information */}
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               <motion.div
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="bg-white p-8 rounded-xl shadow-lg"
+                className="bg-white p-4 sm:p-5 md:p-6 lg:p-8 rounded-xl shadow-lg"
               >
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
                   {t('ways')}
                 </h2>
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-5 md:space-y-6">
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">
+                    <h3 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">
                       {t('inPerson')}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed text-justify">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
                       {t('inPersonDesc')}
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">
+                    <h3 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">
                       {t('eTransfer')}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed text-justify">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
                       {t('eTransferDesc')}
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">
+                    <h3 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">
                       {t('bankTransfer')}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed text-justify">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
                       {t('bankTransferDesc')}
                     </p>
                   </div>
@@ -89,16 +89,16 @@ export default function DonateContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="bg-gradient-to-r from-gold-500 to-gold-600 rounded-xl p-8 text-white"
+                className="bg-gradient-to-r from-gold-500 to-gold-600 rounded-xl p-4 sm:p-5 md:p-6 lg:p-8 text-white"
               >
-                <h2 className="text-2xl font-bold mb-4">{t('everyGift')}</h2>
-                <p className="text-lg text-gold-100 leading-relaxed text-justify mb-6">
+                <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">{t('everyGift')}</h2>
+                <p className="text-sm sm:text-base md:text-lg text-gold-100 leading-relaxed text-justify mb-4 sm:mb-5 md:mb-6">
                   {t('everyGiftDesc')}
                 </p>
                 <Link
                   href={getContactPath()}
                   prefetch={true}
-                  className="inline-block bg-white text-gold-600 hover:bg-gold-50 font-semibold py-3 px-8 rounded-lg transition-all duration-300"
+                  className="inline-block bg-white text-gold-600 hover:bg-gold-50 font-semibold py-2.5 sm:py-3 px-6 sm:px-8 rounded-lg transition-all duration-300 text-sm sm:text-base"
                 >
                   {t('contact')}
                 </Link>
