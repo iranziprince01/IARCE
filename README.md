@@ -1,4 +1,4 @@
-# International Anglican Revival Ministries (IARCE) Website
+# International Anglican Revival Ministries Website
 
 A modern, multilingual church website built with Next.js 14, TypeScript, Tailwind CSS, and Framer Motion.
 
