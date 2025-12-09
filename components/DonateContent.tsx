@@ -6,6 +6,7 @@ import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import DonationForm from './DonationForm';
 import PageHero from './PageHero';
+import ImageGallery from './ImageGallery';
 import { defaultLocale } from '@/i18n/request';
 
 export default function DonateContent() {
@@ -107,6 +108,19 @@ export default function DonateContent() {
           </div>
         </div>
       </section>
+
+      {/* Image Gallery Section */}
+      <ImageGallery
+        images={[
+          '/images/foundation/005.jpg',
+          '/images/foundation/008.jpg',
+          '/images/foundation/004.jpg',
+          '/images/foundation/006.jpg',
+        ]}
+        title="Impact of Your Generosity"
+        subtitle="See how your donations transform lives and support our ministry"
+        columns={4}
+      />
     </div>
   );
 }

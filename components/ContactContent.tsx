@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import ContactForm from '@/components/ContactForm';
+import ImageGallery from './ImageGallery';
 import {
   CalendarIcon,
   BookOpenIcon,
@@ -272,6 +273,19 @@ export default function ContactContent() {
           </motion.div>
         </div>
       </section>
+
+      {/* Image Gallery Section */}
+      <ImageGallery
+        images={[
+          '/images/foundation/001.jpg',
+          '/images/foundation/002.jpg',
+          '/images/foundation/003.jpg',
+          '/images/foundation/010.jpg',
+        ]}
+        title="Our Community"
+        subtitle="Join us and be part of a vibrant, welcoming community"
+        columns={4}
+      />
     </div>
   );
 }

@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import PageHero from './PageHero';
+import ImageGallery from './ImageGallery';
 import {
   UserIcon,
   UserGroupIcon,
@@ -105,8 +106,21 @@ export default function LeadershipContent() {
         </div>
       </section>
 
+      {/* Image Gallery Section */}
+      <ImageGallery
+        images={[
+          '/images/foundation/007.jpg',
+          '/images/foundation/009.jpg',
+          '/images/foundation/011.jpg',
+          '/images/foundation/010.jpg',
+        ]}
+        title="Our Leadership Team"
+        subtitle="Meet the dedicated leaders who guide and serve our community"
+        columns={4}
+      />
+
       {/* Other Church Leaders Section */}
-      <section className="section-padding bg-gradient-to-br from-blue-50 via-white to-gold-50">
+      <section className="section-padding bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <motion.div

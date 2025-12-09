@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import VolunteerForm from './VolunteerForm';
 import PageHero from './PageHero';
+import ImageGallery from './ImageGallery';
 
 export default function VolunteerContent() {
   const params = useParams();
@@ -93,6 +94,18 @@ export default function VolunteerContent() {
           </div>
         </div>
       </section>
+
+      {/* Image Gallery Section */}
+      <ImageGallery
+        images={[
+          '/images/foundation/010.jpg',
+          '/images/foundation/004.jpg',
+          '/images/foundation/006.jpg',
+        ]}
+        title="Volunteer Opportunities"
+        subtitle="Join our dedicated volunteers making a difference in the community"
+        columns={3}
+      />
     </div>
   );
 }

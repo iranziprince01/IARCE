@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import PageHero from './PageHero';
+import ImageGallery from './ImageGallery';
 import {
   HeartIcon,
   ShieldCheckIcon,
@@ -106,6 +107,21 @@ export default function AboutContent() {
           </div>
         </div>
       </section>
+
+      {/* Image Gallery Section */}
+      <ImageGallery
+        images={[
+          '/images/foundation/001.jpg',
+          '/images/foundation/003.jpg',
+          '/images/foundation/004.jpg',
+          '/images/foundation/006.jpg',
+          '/images/foundation/008.jpg',
+          '/images/foundation/010.jpg',
+        ]}
+        title="Our Community in Action"
+        subtitle="Witness the love, fellowship, and service that define our church family"
+        columns={3}
+      />
 
       {/* Core Values */}
       <section className="section-padding bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100" id="values">

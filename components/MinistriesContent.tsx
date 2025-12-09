@@ -12,6 +12,7 @@ import {
   GlobeAltIcon,
 } from '@heroicons/react/24/outline';
 import PageHero from './PageHero';
+import ImageGallery from './ImageGallery';
 import { defaultLocale } from '@/i18n/request';
 
 export default function MinistriesContent() {
@@ -78,7 +79,24 @@ export default function MinistriesContent() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
 
+      {/* Image Gallery Section */}
+      <ImageGallery
+        images={[
+          '/images/foundation/002.jpg',
+          '/images/foundation/005.jpg',
+          '/images/foundation/006.jpg',
+          '/images/foundation/008.jpg',
+        ]}
+        title="Ministry in Action"
+        subtitle="See how our ministries serve and impact lives in our community"
+        columns={4}
+      />
+
+      <section className="section-padding bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100">
+        <div className="container-custom">
           {/* Refugee Support Section */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}

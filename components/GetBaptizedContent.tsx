@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import BaptismRequestForm from './BaptismRequestForm';
 import PageHero from './PageHero';
+import ImageGallery from './ImageGallery';
 
 export default function GetBaptizedContent() {
   const params = useParams();
@@ -116,6 +117,18 @@ export default function GetBaptizedContent() {
           </div>
         </div>
       </section>
+
+      {/* Image Gallery Section */}
+      <ImageGallery
+        images={[
+          '/images/foundation/006.jpg',
+          '/images/foundation/008.jpg',
+          '/images/foundation/010.jpg',
+        ]}
+        title="Baptism Celebrations"
+        subtitle="Witness the joy and transformation of baptism in our community"
+        columns={3}
+      />
     </div>
   );
 }

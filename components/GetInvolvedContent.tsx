@@ -3,12 +3,14 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import {
   UserGroupIcon,
   HandRaisedIcon,
   StarIcon,
 } from '@heroicons/react/24/outline';
 import PageHero from './PageHero';
+import ImageGallery from './ImageGallery';
 import { defaultLocale } from '@/i18n/request';
 
 export default function GetInvolvedContent({ locale }: { locale: string }) {
@@ -64,31 +66,54 @@ export default function GetInvolvedContent({ locale }: { locale: string }) {
         <div className="container-custom">
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-8 max-w-7xl mx-auto px-4 sm:px-6">
-            {involvementOptions.map((option, index) => (
-              <motion.div
-                key={option.key}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="bg-white rounded-xl shadow-xl hover:shadow-2xl transition-shadow overflow-hidden"
-              >
-                <div className="h-24 sm:h-28 md:h-32 bg-gradient-to-r from-gold-500 to-gold-600 flex items-center justify-center">
-                  <option.Icon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-white" />
-                </div>
-                <div className="p-4 sm:p-5 md:p-6">
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">
-                    {t(option.key)}
-                  </h3>
-                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify mb-3 sm:mb-4">
-                    {option.desc}
-                  </p>
-                  <Link href={option.href} prefetch={true} className="inline-block btn-primary">
-                    {tPage('learnMore')}
-                  </Link>
-                </div>
-              </motion.div>
-            ))}
+            {involvementOptions.map((option, index) => {
+              // Map each option to a relevant foundation image
+              const optionImages = [
+                '/images/foundation/010.jpg', // volunteer
+                '/images/foundation/001.jpg', // become member
+                '/images/foundation/003.jpg', // prayer
+                '/images/foundation/006.jpg', // get baptized
+              ];
+              
+              return (
+                <motion.div
+                  key={option.key}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                  className="bg-white rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden group"
+                >
+                  <div className="relative h-32 sm:h-40 md:h-48 overflow-hidden">
+                    <Image
+                      src={optionImages[index]}
+                      alt={option.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-300"
+                      loading="lazy"
+                      quality={85}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-4">
+                      <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center mb-2">
+                        <option.Icon className="w-6 h-6 text-white" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4 sm:p-5 md:p-6">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">
+                      {t(option.key)}
+                    </h3>
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify mb-3 sm:mb-4">
+                      {option.desc}
+                    </p>
+                    <Link href={option.href} prefetch={true} className="inline-block btn-primary">
+                      {tPage('learnMore')}
+                    </Link>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>

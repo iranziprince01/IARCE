@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import PrayerRequestForm from './PrayerRequestForm';
 import PageHero from './PageHero';
+import ImageGallery from './ImageGallery';
 
 export default function PrayerContent() {
   const params = useParams();
@@ -99,6 +100,18 @@ export default function PrayerContent() {
           </div>
         </div>
       </section>
+
+      {/* Image Gallery Section */}
+      <ImageGallery
+        images={[
+          '/images/foundation/003.jpg',
+          '/images/foundation/006.jpg',
+          '/images/foundation/010.jpg',
+        ]}
+        title="Prayer & Fellowship"
+        subtitle="Join us in prayer and experience the power of community intercession"
+        columns={3}
+      />
     </div>
   );
 }

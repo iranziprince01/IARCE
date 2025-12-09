@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import MembershipForm from './MembershipForm';
 import PageHero from './PageHero';
+import ImageGallery from './ImageGallery';
 
 export default function BecomeMemberContent() {
   const params = useParams();
@@ -112,6 +113,18 @@ export default function BecomeMemberContent() {
           </div>
         </div>
       </section>
+
+      {/* Image Gallery Section */}
+      <ImageGallery
+        images={[
+          '/images/foundation/001.jpg',
+          '/images/foundation/002.jpg',
+          '/images/foundation/003.jpg',
+        ]}
+        title="Our Church Family"
+        subtitle="Become part of a welcoming and supportive community"
+        columns={3}
+      />
     </div>
   );
 }
