@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import PageHero from './PageHero';
 import ImageGallery from './ImageGallery';
 import {
@@ -26,7 +27,7 @@ export default function LeadershipContent() {
       {/* Senior Pastor Section */}
       <section className="section-padding bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -49,17 +50,36 @@ export default function LeadershipContent() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 lg:p-12 shadow-xl mx-4 sm:mx-6"
+              className="bg-white rounded-xl sm:rounded-2xl shadow-xl mx-4 sm:mx-6 overflow-hidden"
             >
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                {t('seniorPastorName')}
-              </h3>
-              <p className="text-base sm:text-lg text-gold-600 font-semibold mb-4 sm:mb-5 md:mb-6">
-                {t('seniorPastorTitle')}
-              </p>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-justify">
-                {t('seniorPastorBio')}
-              </p>
+              <div className="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr] gap-0">
+                {/* Image Section - Left Side */}
+                <div className="relative w-full h-[300px] sm:h-[350px] md:h-[450px] lg:h-[500px] order-2 md:order-1">
+                  <Image
+                    src="/images/foundation/009.jpg"
+                    alt={t('seniorPastorName')}
+                    fill
+                    className="object-cover"
+                    style={{ objectPosition: 'center top' }}
+                    loading="lazy"
+                    quality={90}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
+                </div>
+
+                {/* Text Section - Right Side */}
+                <div className="p-5 sm:p-6 md:p-8 lg:p-10 flex flex-col justify-center order-1 md:order-2">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                    {t('seniorPastorName')}
+                  </h3>
+                  <p className="text-base sm:text-lg text-gold-600 font-semibold mb-4 sm:mb-5 md:mb-6">
+                    {t('seniorPastorTitle')}
+                  </p>
+                  <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-justify">
+                    {t('seniorPastorBio')}
+                  </p>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
