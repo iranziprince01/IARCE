@@ -4,11 +4,9 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import PageHero from './PageHero';
-import ImageGallery from './ImageGallery';
 import {
   UserIcon,
   UserGroupIcon,
-  BriefcaseIcon,
 } from '@heroicons/react/24/outline';
 
 export default function LeadershipContent() {
