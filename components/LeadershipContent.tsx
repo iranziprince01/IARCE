@@ -209,6 +209,90 @@ export default function LeadershipContent() {
                   {t('pastor4Bio')}
                 </p>
               </motion.div>
+
+              {/* Leader 1 - Choir Organizer */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-5 sm:p-6 md:p-8 hover:shadow-2xl transition-shadow"
+              >
+                <div className="mb-4">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+                    {t('leader1Name')}
+                  </h3>
+                  <div className="inline-block px-3 py-1.5 bg-gradient-to-r from-gold-500 to-gold-600 text-white font-semibold rounded-lg text-xs sm:text-sm">
+                    {t('leader1Title')}
+                  </div>
+                </div>
+                <p className="text-xs sm:text-sm text-gray-700 leading-relaxed text-justify">
+                  {t('leader1Bio')}
+                </p>
+              </motion.div>
+
+              {/* Leader 2 - Intercessor */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-5 sm:p-6 md:p-8 hover:shadow-2xl transition-shadow"
+              >
+                <div className="mb-4">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+                    {t('leader2Name')}
+                  </h3>
+                  <div className="inline-block px-3 py-1.5 bg-gradient-to-r from-gold-500 to-gold-600 text-white font-semibold rounded-lg text-xs sm:text-sm">
+                    {t('leader2Title')}
+                  </div>
+                </div>
+                <p className="text-xs sm:text-sm text-gray-700 leading-relaxed text-justify">
+                  {t('leader2Bio')}
+                </p>
+              </motion.div>
+
+              {/* Leader 3 - Youth Leader */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+                className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-5 sm:p-6 md:p-8 hover:shadow-2xl transition-shadow"
+              >
+                <div className="mb-4">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+                    {t('leader3Name')}
+                  </h3>
+                  <div className="inline-block px-3 py-1.5 bg-gradient-to-r from-gold-500 to-gold-600 text-white font-semibold rounded-lg text-xs sm:text-sm">
+                    {t('leader3Title')}
+                  </div>
+                </div>
+                <p className="text-xs sm:text-sm text-gray-700 leading-relaxed text-justify">
+                  {t('leader3Bio')}
+                </p>
+              </motion.div>
+
+              {/* Leader 4 - Foundation Lead */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-5 sm:p-6 md:p-8 hover:shadow-2xl transition-shadow"
+              >
+                <div className="mb-4">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+                    {t('leader4Name')}
+                  </h3>
+                  <div className="inline-block px-3 py-1.5 bg-gradient-to-r from-gold-500 to-gold-600 text-white font-semibold rounded-lg text-xs sm:text-sm">
+                    {t('leader4Title')}
+                  </div>
+                </div>
+                <p className="text-xs sm:text-sm text-gray-700 leading-relaxed text-justify">
+                  {t('leader4Bio')}
+                </p>
+              </motion.div>
             </div>
           </div>
         </div>
