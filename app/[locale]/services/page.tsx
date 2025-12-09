@@ -85,8 +85,8 @@ export default function ServicesPage() {
             <p className="text-lg text-gold-100 leading-relaxed">
               Our services are welcoming and inclusive, featuring inspiring
               messages, uplifting music, and warm fellowship. We offer worship
-              in English with additional support in French and Kinyarwanda. Whether you're visiting for
-              the first time or are a regular member, you'll find a place to
+              in English with additional support in French and Kinyarwanda. Whether you&apos;re visiting for
+              the first time or are a regular member, you&apos;ll find a place to
               belong and grow in faith.
             </p>
           </motion.div>

@@ -55,7 +55,7 @@ export default function VolunteerContent() {
                   </li>
                   <li className="flex items-start space-x-2 sm:space-x-3">
                     <span className="text-gold-500 font-bold mt-1">•</span>
-                    <span className="text-justify">Children's Ministry</span>
+                    <span className="text-justify">Children&apos;s Ministry</span>
                   </li>
                   <li className="flex items-start space-x-2 sm:space-x-3">
                     <span className="text-gold-500 font-bold mt-1">•</span>

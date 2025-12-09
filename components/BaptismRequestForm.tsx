@@ -195,7 +195,7 @@ export default function BaptismRequestForm() {
         {/* Status Messages */}
         {submitStatus === 'success' && (
           <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
-            Thank you! Your baptism request has been submitted. We'll be in touch soon to schedule your baptism orientation.
+            Thank you! Your baptism request has been submitted. We&apos;ll be in touch soon to schedule your baptism orientation.
           </div>
         )}
 

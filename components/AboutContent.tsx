@@ -395,7 +395,7 @@ export default function AboutContent() {
                   className="bg-white rounded-xl p-6 md:p-8 shadow-md"
                 >
                   <p className="text-lg text-gray-700 leading-relaxed text-justify">
-                    Our church community reflects the diversity of God's kingdom, bringing together people from various backgrounds, languages, and cultures to worship and serve together in unity.
+                    Our church community reflects the diversity of God&apos;s kingdom, bringing together people from various backgrounds, languages, and cultures to worship and serve together in unity.
                   </p>
                 </motion.div>
               </div>

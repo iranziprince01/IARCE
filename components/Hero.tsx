@@ -83,7 +83,7 @@ export default function Hero() {
           >
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-5 md:p-6 border border-white/20">
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white italic text-center leading-relaxed mb-2 px-2">
-                "{t('bibleVerse')}"
+                &ldquo;{t('bibleVerse')}&rdquo;
               </p>
               <p className="text-xs sm:text-sm md:text-base text-gold-200 text-center font-semibold">
                 {t('bibleVerseRef')}

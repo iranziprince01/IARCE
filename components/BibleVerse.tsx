@@ -31,7 +31,7 @@ export default function BibleVerse({
           <BookOpenIcon className="w-8 h-8 text-gold-100 flex-shrink-0 mt-1" />
           <div className="flex-1">
             <p className="text-xl md:text-2xl font-medium leading-relaxed italic mb-4 text-gold-50">
-              "{verse}"
+              &ldquo;{verse}&rdquo;
             </p>
             <p className="text-base md:text-lg font-semibold text-gold-100 text-right">
               — {reference}
@@ -55,7 +55,7 @@ export default function BibleVerse({
           <BookOpenIcon className="w-6 h-6 text-gold-600 flex-shrink-0 mt-1" />
           <div className="flex-1">
             <p className="text-lg font-medium leading-relaxed italic text-gray-700 mb-2">
-              "{verse}"
+              &ldquo;{verse}&rdquo;
             </p>
             <p className="text-sm font-semibold text-gold-600 text-right">
               — {reference}
@@ -79,7 +79,7 @@ export default function BibleVerse({
         <BookOpenIcon className="w-8 h-8 text-gold-600 flex-shrink-0 mt-1" />
         <div className="flex-1">
           <p className="text-xl md:text-2xl font-medium leading-relaxed italic text-gray-800 mb-4">
-            "{verse}"
+            &ldquo;{verse}&rdquo;
           </p>
           <p className="text-base md:text-lg font-semibold text-gold-600 text-right">
             — {reference}

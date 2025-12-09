@@ -264,7 +264,7 @@ export default function VolunteerForm() {
         {/* Status Messages */}
         {submitStatus === 'success' && (
           <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
-            Thank you! Your volunteering request has been submitted successfully. We'll be in touch soon.
+            Thank you! Your volunteering request has been submitted successfully. We&apos;ll be in touch soon.
           </div>
         )}
 
