@@ -96,9 +96,19 @@ export default function Footer() {
               <p>
                 <span className="font-semibold">{t('phone')}:</span>
                 <br />
-                +1 587-778-6406
-                <br />
-                +1 825-461-7431
+                <a
+                  href="tel:+15877786406"
+                  className="hover:text-gold-400 hover:text-blue-300 transition-colors"
+                >
+                  +1 587-778-6406
+                </a>
+                {' / '}
+                <a
+                  href="tel:+18254617431"
+                  className="hover:text-gold-400 hover:text-blue-300 transition-colors"
+                >
+                  +1 825-461-7431
+                </a>
               </p>
               <p>
                 <span className="font-semibold">{t('email')}:</span>
