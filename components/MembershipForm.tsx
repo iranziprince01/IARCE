@@ -303,7 +303,7 @@ export default function MembershipForm() {
                 type="text"
                 id="spouseName"
                 {...register('spouseName')}
-                placeholder="Enter your spouse's name"
+                placeholder="Enter your spouse&apos;s name"
                 className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors"
               />
             </div>
