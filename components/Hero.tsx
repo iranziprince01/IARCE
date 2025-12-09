@@ -58,13 +58,14 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6 sm:mb-8 md:mb-10"
           >
-            <Link 
-              href={locale === defaultLocale ? '/services-sermons' : `/${locale}/services-sermons`}
-              prefetch={true}
+            <a 
+              href="https://www.youtube.com/@InternationalAnglicanRevivalMi"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 text-sm sm:text-base md:text-lg"
             >
               {t('worshipWithUs')}
-            </Link>
+            </a>
             <Link
               href={locale === defaultLocale ? '/donate' : `/${locale}/donate`}
               prefetch={true}
