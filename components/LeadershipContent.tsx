@@ -298,54 +298,6 @@ export default function LeadershipContent() {
         </div>
       </section>
 
-      {/* Image Gallery Section */}
-      <ImageGallery
-        images={[
-          '/images/foundation/007.jpg',
-          '/images/foundation/009.jpg',
-          '/images/foundation/011.jpg',
-          '/images/foundation/010.jpg',
-        ]}
-        title="Our Leadership Team"
-        subtitle="Meet the dedicated leaders who guide and serve our community"
-        columns={4}
-      />
-
-      {/* Other Church Leaders Section */}
-      <section className="section-padding bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-8 sm:mb-10 md:mb-12 px-4 sm:px-6"
-            >
-              <div className="flex justify-center mb-4 sm:mb-5 md:mb-6">
-                <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-br from-gold-500 to-blue-600 rounded-full flex items-center justify-center">
-                  <BriefcaseIcon className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-white" />
-                </div>
-              </div>
-              <h2 className="heading-secondary text-gray-900 mb-3 sm:mb-4">
-                {t('otherLeaders')}
-              </h2>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 lg:p-12 shadow-xl mx-4 sm:mx-6"
-            >
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-justify">
-                {t('otherLeadersDesc')}
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
