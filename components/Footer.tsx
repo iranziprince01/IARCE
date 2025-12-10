@@ -56,7 +56,7 @@ export default function Footer() {
     { key: 'partners', href: getPath('/about#partners') },
     { key: 'africa', href: getPath('/about#africa') },
     { key: 'refugee', href: getPath('/ministries#refugee') },
-    { key: 'volunteer', href: getPath('/contact#volunteer') },
+    { key: 'volunteer', href: getPath('/get-involved/volunteer') },
     { key: 'donate', href: getPath('/donate') },
     { key: 'privacy', href: getPath('/privacy') },
     { key: 'terms', href: getPath('/terms') },
@@ -64,10 +64,10 @@ export default function Footer() {
 
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-gray-300">
-      <div className="container-custom section-padding">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 mb-6 sm:mb-8 px-4 sm:px-6">
+      <div className="container-custom pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-4 sm:pb-6 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-6 mb-6 sm:mb-8">
           {/* About Section */}
-          <div>
+          <div className="min-w-0 max-w-full overflow-hidden">
             <div className="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
               <div className="relative w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10">
                 <Image
@@ -84,7 +84,7 @@ export default function Footer() {
                 International Anglican<br />Revival Ministries
               </h3>
             </div>
-            <p className="text-xs sm:text-sm mb-3 sm:mb-4">
+            <p className="text-xs sm:text-sm mb-3 sm:mb-4 break-words">
               {t('description')}
             </p>
             <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
@@ -124,7 +124,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="min-w-0 max-w-full overflow-hidden">
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {footerLinks.slice(0, 5).map((link) => (
@@ -142,7 +142,7 @@ export default function Footer() {
           </div>
 
           {/* Resources */}
-          <div>
+          <div className="min-w-0 max-w-full overflow-hidden">
             <h4 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Resources</h4>
             <ul className="space-y-1.5 sm:space-y-2">
               {footerLinks.slice(5).map((link) => (
@@ -160,9 +160,9 @@ export default function Footer() {
           </div>
 
           {/* Social Media */}
-          <div>
+          <div className="min-w-0 w-full">
             <h4 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">{t('follow')}</h4>
-            <div className="flex flex-nowrap gap-1.5 sm:gap-2 md:gap-3 overflow-x-auto scrollbar-hide">
+            <div className="flex flex-wrap gap-1.5 sm:gap-2 md:gap-3">
               <a
                 href="https://facebook.com"
                 target="_blank"
@@ -259,7 +259,7 @@ export default function Footer() {
             <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-gray-800">
               <form
                 onSubmit={handleSubscribe}
-                className="flex flex-col sm:flex-row gap-2 sm:gap-3 max-w-md"
+                className="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full"
               >
                 <input
                   type="email"
@@ -267,12 +267,12 @@ export default function Footer() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder={t('emailPlaceholder')}
                   required
-                  className="flex-1 px-3 sm:px-4 py-2 sm:py-2.5 md:py-3 bg-gray-800 text-white rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-xs sm:text-sm"
+                  className="flex-1 min-w-0 px-3 sm:px-4 py-2 sm:py-2.5 md:py-3 bg-gray-800 text-white rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-xs sm:text-sm"
                 />
                 <button
                   type="submit"
                   disabled={isSubmitting || submitted}
-                  className="px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors disabled:opacity-70 disabled:cursor-not-allowed text-xs sm:text-sm whitespace-nowrap"
+                  className="flex-shrink-0 px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors disabled:opacity-70 disabled:cursor-not-allowed text-xs sm:text-sm whitespace-nowrap"
                 >
                   {submitted ? '✓ Subscribed!' : isSubmitting ? 'Subscribing...' : t('subscribeButton')}
                 </button>
@@ -281,7 +281,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-6 sm:pt-8 text-center px-4 sm:px-6">
+        <div className="border-t border-gray-800 pt-4 sm:pt-5 pb-2 text-center">
           <p>
             {t('copyright', { year: new Date().getFullYear() })}
           </p>

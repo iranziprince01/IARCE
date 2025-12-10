@@ -25,10 +25,92 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
 
-  const jsonLd = {
+  const baseUrl = 'https://iarce.org';
+  const siteUrl = locale === 'en' ? baseUrl : `${baseUrl}/${locale}`;
+
+  // Enhanced Organization Schema
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${baseUrl}/#organization`,
+    name: 'International Anglican Revival Ministries',
+    alternateName: ['IARCE', 'IARM'],
+    legalName: 'International Anglican Revival Ministries',
+    url: baseUrl,
+    logo: `${baseUrl}/logos/website.webp`,
+    image: `${baseUrl}/logos/website.webp`,
+    description: 'A vibrant Christian community in Edmonton, Alberta, dedicated to spiritual growth, compassion, and service. Multilingual worship services in English and Kinyarwanda.',
+    foundingDate: '2010',
+    foundingLocation: {
+      '@type': 'Place',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Edmonton',
+        addressRegion: 'AB',
+        addressCountry: 'CA',
+      },
+    },
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        telephone: '+1-587-778-6406',
+        contactType: 'Main Office',
+        areaServed: 'CA',
+        availableLanguage: ['English', 'Kinyarwanda'],
+      },
+      {
+        '@type': 'ContactPoint',
+        telephone: '+1-825-461-7431',
+        contactType: 'Secondary',
+        areaServed: 'CA',
+        availableLanguage: ['English', 'Kinyarwanda'],
+      },
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '6110 Fulton Road',
+      addressLocality: 'Edmonton',
+      addressRegion: 'AB',
+      postalCode: 'T6A 3T3',
+      addressCountry: 'CA',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 53.5461,
+      longitude: -113.4938,
+    },
+    email: 'info@iarmministries.org',
+    telephone: ['+1-587-778-6406', '+1-825-461-7431'],
+    sameAs: [
+      'https://www.facebook.com',
+      'https://www.instagram.com/iarministries/',
+      'https://www.youtube.com/@InternationalAnglicanRevivalMi',
+      'https://wa.me/250785961427',
+    ],
+    areaServed: [
+      {
+        '@type': 'City',
+        name: 'Edmonton',
+        '@id': 'https://www.wikidata.org/wiki/Q2096',
+      },
+      {
+        '@type': 'State',
+        name: 'Alberta',
+        '@id': 'https://www.wikidata.org/wiki/Q1951',
+      },
+      {
+        '@type': 'Country',
+        name: 'Canada',
+        '@id': 'https://www.wikidata.org/wiki/Q16',
+      },
+    ],
+  };
+
+  // PlaceOfWorship Schema
+  const placeOfWorshipSchema = {
     '@context': 'https://schema.org',
     '@type': 'PlaceOfWorship',
-    '@id': `https://iarce.org/${locale === 'en' ? '' : locale + '/'}`,
+    '@id': `${siteUrl}/#place`,
     name: 'International Anglican Revival Ministries',
     alternateName: 'IARCE',
     description: 'A vibrant Christian community in Edmonton dedicated to spiritual growth, compassion, and service. Multilingual worship services in English and Kinyarwanda.',
@@ -46,13 +128,8 @@ export default async function LocaleLayout({
       longitude: -113.4938,
     },
     telephone: ['+1-587-778-6406', '+1-825-461-7431'],
-    email: 'info@iarce.org',
-    url: `https://iarce.org/${locale === 'en' ? '' : locale + '/'}`,
-    sameAs: [
-      'https://facebook.com/iarce',
-      'https://instagram.com/iarce',
-      'https://youtube.com/iarce',
-    ],
+    email: 'info@iarmministries.org',
+    url: siteUrl,
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
@@ -60,12 +137,54 @@ export default async function LocaleLayout({
         opens: '10:00',
         closes: '13:00',
       },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Wednesday'],
+        opens: '18:00',
+        closes: '20:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Thursday'],
+        opens: '18:00',
+        closes: '20:00',
+      },
     ],
     areaServed: {
       '@type': 'City',
       name: 'Edmonton',
       '@id': 'https://www.wikidata.org/wiki/Q2096',
     },
+  };
+
+  // LocalBusiness Schema
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${baseUrl}/#business`,
+    name: 'International Anglican Revival Ministries',
+    image: `${baseUrl}/logos/website.webp`,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '6110 Fulton Road',
+      addressLocality: 'Edmonton',
+      addressRegion: 'AB',
+      postalCode: 'T6A 3T3',
+      addressCountry: 'CA',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 53.5461,
+      longitude: -113.4938,
+    },
+    url: siteUrl,
+    telephone: '+1-587-778-6406',
+    priceRange: 'Free',
+    openingHours: [
+      'Su 10:00-13:00',
+      'We 18:00-20:00',
+      'Th 18:00-20:00',
+    ],
   };
 
   return (
@@ -82,11 +201,32 @@ export default async function LocaleLayout({
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="https://images.pexels.com" />
         <link rel="manifest" href="/manifest.webmanifest" />
+        {/* Enhanced Structured Data */}
         <Script
-          id="schema-org"
+          id="schema-org-organization"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
+        <Script
+          id="schema-org-place"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(placeOfWorshipSchema) }}
+        />
+        <Script
+          id="schema-org-business"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        {/* Hreflang tags for language alternates */}
+        {locales.map((loc) => (
+          <link
+            key={loc}
+            rel="alternate"
+            hrefLang={loc === 'en' ? 'en-CA' : loc}
+            href={loc === 'en' ? baseUrl : `${baseUrl}/${loc}`}
+          />
+        ))}
+        <link rel="alternate" hrefLang="x-default" href={baseUrl} />
       </head>
       <body className="antialiased bg-white text-gray-900">
         <NextIntlClientProvider messages={messages}>

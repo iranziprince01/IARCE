@@ -35,7 +35,62 @@ export async function generateMetadata({
   };
 }
 
-export default function ContactPage() {
-  return <ContactContent />;
+export default function ContactPage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const canonicalUrl = locale === 'en' ? 'https://iarce.org/contact' : `https://iarce.org/${locale}/contact`;
+  
+  return (
+    <>
+      <ContactContent />
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: locale === 'en' ? 'https://iarce.org' : `https://iarce.org/${locale}`,
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Contact Us',
+                item: canonicalUrl,
+              },
+            ],
+          }),
+        }}
+      />
+      {/* ContactPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ContactPage',
+            name: 'Contact Us',
+            description: 'Get in touch with International Anglican Revival Ministries',
+            url: canonicalUrl,
+            mainEntity: {
+              '@type': 'PostalAddress',
+              streetAddress: '6110 Fulton Road',
+              addressLocality: 'Edmonton',
+              addressRegion: 'AB',
+              postalCode: 'T6A 3T3',
+              addressCountry: 'CA',
+            },
+          }),
+        }}
+      />
+    </>
+  );
 }
 

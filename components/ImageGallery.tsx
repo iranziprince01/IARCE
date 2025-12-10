@@ -92,28 +92,30 @@ export default function ImageGallery({
       {/* Image Modal */}
       {selectedImage && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-2 sm:p-4"
           onClick={() => setSelectedImage(null)}
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="relative max-w-5xl max-h-[90vh] w-full"
+            className="relative max-w-5xl max-h-[95vh] sm:max-h-[90vh] w-full mx-2 sm:mx-4"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute -top-12 right-0 text-white hover:text-gold-500 transition-colors text-2xl font-bold"
+              className="absolute -top-8 sm:-top-12 right-0 sm:right-0 text-white hover:text-gold-500 transition-colors text-xl sm:text-2xl font-bold z-10 p-2"
+              aria-label="Close image"
             >
               ×
             </button>
-            <div className="relative w-full h-[80vh] rounded-lg overflow-hidden">
+            <div className="relative w-full h-[85vh] sm:h-[80vh] rounded-lg overflow-hidden">
               <Image
                 src={selectedImage}
                 alt="Selected gallery image"
                 fill
                 className="object-contain"
                 quality={95}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
               />
             </div>
           </motion.div>

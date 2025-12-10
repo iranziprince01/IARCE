@@ -17,7 +17,6 @@ export default function PrayerContent() {
       {/* Hero Section */}
       <PageHero
         title={t('title')}
-        subtitle={t('subtitle')}
         backgroundImage="/images/foundation/010.jpg"
         backgroundImageAlt="Church prayer ministry"
       />
@@ -33,44 +32,44 @@ export default function PrayerContent() {
           >
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 px-4 sm:px-6">
             {/* Left Side - Content */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="space-y-8"
+              className="space-y-6 sm:space-y-8"
             >
-              <div className="bg-white p-8 rounded-xl shadow-xl">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-xl">
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
                   {t('ministry')}
                 </h2>
-                <p className="text-lg text-gray-700 leading-relaxed text-justify mb-6">
+                <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed text-justify mb-4 sm:mb-6">
                   {t('ministryDesc')}
                 </p>
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">
+                    <h3 className="font-semibold text-gray-900 mb-1.5 sm:mb-2 text-sm sm:text-base">
                       {t('weekly')}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed text-justify">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
                       {t('weeklyDesc')}
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">
+                    <h3 className="font-semibold text-gray-900 mb-1.5 sm:mb-2 text-sm sm:text-base">
                       {t('requests')}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed text-justify">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
                       {t('requestsDesc')}
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">
+                    <h3 className="font-semibold text-gray-900 mb-1.5 sm:mb-2 text-sm sm:text-base">
                       {t('team')}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed text-justify">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">
                       {t('teamDesc')}
                     </p>
                   </div>
@@ -82,11 +81,11 @@ export default function PrayerContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="space-y-6"
+                className="space-y-4 sm:space-y-6"
               >
-                <div className="bg-gradient-to-r from-gold-500 to-gold-600 rounded-xl p-8 text-white text-center">
-                  <h2 className="text-2xl font-bold mb-4">{t('join')}</h2>
-                  <p className="text-lg text-gold-100 leading-relaxed text-justify">
+                <div className="bg-gradient-to-r from-gold-500 to-gold-600 rounded-xl p-4 sm:p-6 md:p-8 text-white text-center">
+                  <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">{t('join')}</h2>
+                  <p className="text-sm sm:text-base md:text-lg text-gold-100 leading-relaxed text-justify">
                     {t('joinDesc')}
                   </p>
                 </div>

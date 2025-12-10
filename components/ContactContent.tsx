@@ -1,7 +1,8 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import ContactForm from '@/components/ContactForm';
 import ImageGallery from './ImageGallery';
 import {
@@ -12,16 +13,21 @@ import {
   UserGroupIcon,
 } from '@heroicons/react/24/outline';
 import PageHero from './PageHero';
+import { defaultLocale } from '@/i18n/request';
 
 export default function ContactContent() {
   const t = useTranslations('contact');
+  const locale = useLocale();
+
+  const getPath = (path: string) => {
+    return locale === defaultLocale ? path : `/${locale}${path}`;
+  };
 
   return (
     <div>
       {/* Hero Section */}
       <PageHero
         title={t('title')}
-        subtitle={t('subtitle')}
         backgroundImage="/images/foundation/002.jpg"
         backgroundImageAlt="Church community and contact"
       />
@@ -29,7 +35,7 @@ export default function ContactContent() {
       {/* Contact Information & Form */}
       <section className="section-padding bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 px-4 sm:px-6 items-start lg:items-start">
             {/* Contact Information */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -104,7 +110,7 @@ export default function ContactContent() {
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
                   Find Us on Map
                 </h3>
-                <div className="w-full h-56 sm:h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-xl border-2 border-gray-200">
+                <div className="w-full h-48 xs:h-56 sm:h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-xl border-2 border-gray-200">
                   <iframe
                     width="100%"
                     height="100%"
@@ -135,7 +141,8 @@ export default function ContactContent() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="bg-white p-4 sm:p-5 md:p-6 lg:p-8 rounded-xl shadow-xl"
+              className="bg-white p-4 sm:p-5 md:p-6 lg:p-8 rounded-xl shadow-xl self-start"
+              style={{ height: 'fit-content' }}
             >
               <h2 className="heading-secondary mb-4 sm:mb-5 md:mb-6">Send us a Message</h2>
               <ContactForm />
@@ -163,81 +170,94 @@ export default function ContactContent() {
             <p className="text-base sm:text-lg md:text-xl text-gold-100 leading-relaxed text-justify mb-6 sm:mb-8">
               {t('supportMinistryDesc')}
             </p>
-            <a
-              href="#"
+            <Link
+              href={getPath('/donate')}
               className="inline-block bg-white text-gold-600 hover:bg-gold-50 font-semibold py-2.5 sm:py-3 px-6 sm:px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm sm:text-base"
             >
               {t('donateNow')}
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>
 
       {/* Events and Resources Section */}
-      <section className="section-padding bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100" id="events-resources">
+      <section className="section-padding bg-gradient-to-br from-gray-50 via-white to-gray-50" id="events-resources">
         <div className="container-custom">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+            {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-center max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12 px-4 sm:px-6"
+              className="text-center mb-12"
           >
-            <h2 className="heading-secondary">{t('eventsResources')}</h2>
-            <div className="bg-white rounded-xl p-4 sm:p-5 md:p-6 shadow-xl max-w-3xl mx-auto mt-3 sm:mt-4">
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed text-justify">
-                {t('eventsResourcesDesc')}
-              </p>
-            </div>
+              <h2 className="heading-secondary mb-6">{t('eventsResources')}</h2>
           </motion.div>
 
           {/* Upcoming Events */}
-          <div className="mb-10 sm:mb-12 md:mb-16 px-4 sm:px-6">
-            <h3 className="heading-secondary text-center mb-6 sm:mb-8">
-              {t('upcomingEvents')}
-            </h3>
-            <div className="max-w-4xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="bg-white rounded-xl shadow-xl p-5 sm:p-6 md:p-8 text-center"
-              >
-                <div className="mb-4 sm:mb-5 md:mb-6 flex justify-center">
-                  <CalendarIcon className="w-16 h-16 sm:w-20 sm:h-20 text-gold-600" />
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="mb-12 md:mb-16"
+            >
+              <div className="max-w-4xl mx-auto">
+                <div className="bg-white rounded-2xl p-6 md:p-8 lg:p-10 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+                  <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-r from-gold-500 to-gold-600 rounded-xl flex items-center justify-center shadow-md">
+                        <CalendarIcon className="w-8 h-8 md:w-10 md:h-10 text-white" />
+                      </div>
                 </div>
-                <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed text-justify">
+                    <div className="flex-1 text-center md:text-left">
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                        {t('upcomingEvents')}
+                      </h3>
+                      <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   {t('upcomingEventsDesc')}
                 </p>
-              </motion.div>
+                    </div>
+                  </div>
             </div>
           </div>
+            </motion.div>
 
           {/* Resources */}
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h3 className="heading-secondary text-center mb-6 sm:mb-8">Resources</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="mb-12 md:mb-16"
+            >
+              <h3 className="heading-secondary text-center mb-8 md:mb-10">Resources</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
               {[
                 {
                   title: t('resources.bibleStudy'),
                   desc: t('resources.bibleStudyDesc'),
                   Icon: BookOpenIcon,
+                    color: 'from-blue-500 to-blue-600',
                 },
                 {
                   title: t('resources.prayerRequests'),
                   desc: t('resources.prayerRequestsDesc'),
                   Icon: HandRaisedIcon,
+                    color: 'from-gold-500 to-gold-600',
                 },
                 {
                   title: t('resources.ministryResources'),
                   desc: t('resources.ministryResourcesDesc'),
                   Icon: BriefcaseIcon,
+                    color: 'from-blue-600 to-blue-700',
                 },
                 {
                   title: t('resources.communitySupport'),
                   desc: t('resources.communitySupportDesc'),
                   Icon: UserGroupIcon,
+                    color: 'from-gold-600 to-gold-700',
                 },
               ].map((resource, index) => (
                 <motion.div
@@ -246,60 +266,24 @@ export default function ContactContent() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
-                  className="bg-white p-4 sm:p-5 md:p-6 rounded-xl shadow-xl hover:shadow-2xl transition-shadow"
+                    className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-gold-300"
                 >
-                  <div className="mb-3 sm:mb-4 flex justify-center">
-                    <resource.Icon className="w-10 h-10 sm:w-12 sm:h-12 text-gold-600" />
+                    <div className={`w-14 h-14 bg-gradient-to-r ${resource.color} rounded-xl flex items-center justify-center mb-5 shadow-md group-hover:scale-110 transition-transform duration-300`}>
+                      <resource.Icon className="w-7 h-7 text-white" />
                   </div>
-                  <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
+                    <h4 className="text-xl font-bold text-gray-900 mb-3">
                     {resource.title}
                   </h4>
-                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed text-justify">{resource.desc}</p>
+                    <p className="text-base text-gray-700 leading-relaxed text-left">{resource.desc}</p>
                 </motion.div>
               ))}
             </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Volunteer Section */}
-      <section className="section-padding bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100" id="volunteer">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <h2 className="heading-secondary mb-4">{t('getInvolved')}</h2>
-            <div className="bg-white rounded-xl p-6 md:p-8 shadow-xl mb-8">
-              <p className="text-lg text-gray-700 leading-relaxed text-justify">
-                {t('getInvolvedDesc')}
-              </p>
-            </div>
-            <a
-              href="#contact"
-              className="btn-primary"
-            >
-              Contact Us to Volunteer
-            </a>
-          </motion.div>
-        </div>
-      </section>
 
-      {/* Image Gallery Section */}
-      <ImageGallery
-        images={[
-          '/images/foundation/001.jpg',
-          '/images/foundation/002.jpg',
-          '/images/foundation/003.jpg',
-          '/images/foundation/010.jpg',
-        ]}
-        title="Our Community"
-        subtitle="Join us and be part of a vibrant, welcoming community"
-        columns={4}
-      />
     </div>
   );
 }

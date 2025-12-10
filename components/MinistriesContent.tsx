@@ -37,7 +37,6 @@ export default function MinistriesContent() {
       {/* Hero Section */}
       <PageHero
         title={t('title')}
-        subtitle={t('subtitle')}
         backgroundImage="/images/foundation/002.jpg"
         backgroundImageAlt="Church ministries and service"
       />

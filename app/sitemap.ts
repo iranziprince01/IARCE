@@ -43,6 +43,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
         changeFrequency: route.changeFreq as 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never',
         priority: route.priority,
+        alternates: {
+          languages: locales.reduce((acc, loc) => {
+            const locUrl = loc === 'en' 
+              ? `${baseUrl}${route.path || '/'}` 
+              : `${baseUrl}/${loc}${route.path}`;
+            acc[loc === 'en' ? 'en-CA' : loc] = locUrl;
+            return acc;
+          }, {} as Record<string, string>),
+        },
       });
     });
   });

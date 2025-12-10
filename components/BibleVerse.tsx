@@ -34,7 +34,7 @@ export default function BibleVerse({
               &ldquo;{verse}&rdquo;
             </p>
             <p className="text-base md:text-lg font-semibold text-gold-100 text-right">
-              — {reference}
+              {reference}
             </p>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default function BibleVerse({
               &ldquo;{verse}&rdquo;
             </p>
             <p className="text-sm font-semibold text-gold-600 text-right">
-              — {reference}
+              {reference}
             </p>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function BibleVerse({
             &ldquo;{verse}&rdquo;
           </p>
           <p className="text-base md:text-lg font-semibold text-gold-600 text-right">
-            — {reference}
+            {reference}
           </p>
         </div>
       </div>

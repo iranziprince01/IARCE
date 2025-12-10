@@ -32,6 +32,41 @@ export default function ServicesPage() {
     },
   ];
 
+  // Event Schema for Services
+  const eventSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name: 'Sunday Worship Service',
+    description: 'Join us for inspiring worship, uplifting music, and warm fellowship. Multilingual services in English and Kinyarwanda.',
+    startDate: '2024-01-01T10:00:00-07:00',
+    endDate: '2024-01-01T13:00:00-07:00',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    eventStatus: 'https://schema.org/EventScheduled',
+    location: {
+      '@type': 'Place',
+      name: 'International Anglican Revival Ministries',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '6110 Fulton Road',
+        addressLocality: 'Edmonton',
+        addressRegion: 'AB',
+        postalCode: 'T6A 3T3',
+        addressCountry: 'CA',
+      },
+    },
+    organizer: {
+      '@type': 'Organization',
+      name: 'International Anglican Revival Ministries',
+      url: 'https://iarce.org',
+    },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'CAD',
+      availability: 'https://schema.org/InStock',
+    },
+  };
+
   return (
     <div className="pt-24">
       <section className="section-padding bg-gradient-to-br from-gold-50 to-white">
@@ -92,7 +127,14 @@ export default function ServicesPage() {
           </motion.div>
         </div>
       </section>
+      
+      {/* Event Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(eventSchema),
+        }}
+      />
     </div>
   );
 }
-

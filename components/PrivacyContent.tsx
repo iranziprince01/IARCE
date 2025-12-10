@@ -65,7 +65,6 @@ export default function PrivacyContent() {
       {/* Hero Section */}
       <PageHero
         title={t('title')}
-        subtitle={t('subtitle')}
         backgroundImage="/images/foundation/002.jpg"
         backgroundImageAlt="Privacy and security"
       />
@@ -93,11 +92,9 @@ export default function PrivacyContent() {
                 {t('introduction.lastUpdated')}:{' '}
                 {new Date().toLocaleDateString()}
               </p>
-              <div className="bg-white rounded-xl p-6 shadow-xl">
                 <p className="text-lg text-gray-700 leading-relaxed text-justify">
                   {t('introduction.content')}
                 </p>
-              </div>
             </motion.div>
           </div>
         </div>
@@ -186,6 +183,17 @@ export default function PrivacyContent() {
                     }
                     return null;
                   })()}
+                  {index === sections.length - 1 && (
+                    <p className="text-lg text-gray-700 leading-relaxed mt-6">
+                      <span className="font-semibold">Email:</span>{' '}
+                      <a
+                        href="mailto:info@iarmministries.org"
+                        className="text-blue-600 hover:text-blue-700 underline transition-colors"
+                      >
+                        info@iarmministries.org
+                      </a>
+                    </p>
+                  )}
                 </div>
               </motion.div>
             </div>

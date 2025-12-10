@@ -57,7 +57,6 @@ export default function GetInvolvedContent({ locale }: { locale: string }) {
       {/* Hero Section */}
       <PageHero
         title={tPage('title')}
-        subtitle={tPage('subtitle')}
         backgroundImage="/images/foundation/004.jpg"
         backgroundImageAlt="Church community involvement"
       />

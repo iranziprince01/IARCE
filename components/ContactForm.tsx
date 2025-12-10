@@ -66,7 +66,8 @@ export default function ContactForm() {
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
       onSubmit={handleSubmit(onSubmit)}
-      className="space-y-6"
+      className="space-y-4 sm:space-y-5"
+      style={{ marginBottom: 0, paddingBottom: 0 }}
     >
       <div>
         <label
@@ -79,7 +80,7 @@ export default function ContactForm() {
           type="text"
           id="name"
           {...register('name')}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+          className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent text-sm sm:text-base"
         />
         {errors.name && (
           <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
@@ -97,7 +98,7 @@ export default function ContactForm() {
           type="email"
           id="email"
           {...register('email')}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+          className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent text-sm sm:text-base"
         />
         {errors.email && (
           <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
@@ -115,7 +116,7 @@ export default function ContactForm() {
           type="tel"
           id="phone"
           {...register('phone')}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent"
+          className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent text-sm sm:text-base"
         />
       </div>
 
@@ -128,9 +129,9 @@ export default function ContactForm() {
         </label>
         <textarea
           id="message"
-          rows={6}
+          rows={5}
           {...register('message')}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent resize-none"
+          className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-500 focus:border-transparent resize-none text-sm sm:text-base"
         />
         {errors.message && (
           <p className="mt-1 text-sm text-red-600">{errors.message.message}</p>
@@ -149,13 +150,16 @@ export default function ContactForm() {
         </div>
       )}
 
+      <div className="flex justify-end mt-6">
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
+          className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 sm:py-3 px-6 sm:px-8 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-sm sm:text-base disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+          style={{ marginBottom: 0 }}
       >
         {isSubmitting ? t('sending') : t('send')}
       </button>
+      </div>
     </motion.form>
   );
 }

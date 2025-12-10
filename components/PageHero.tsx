@@ -8,6 +8,7 @@ interface PageHeroProps {
   subtitle?: string;
   backgroundImage: string;
   backgroundImageAlt: string;
+  size?: 'default' | 'small';
 }
 
 export default function PageHero({
@@ -15,6 +16,7 @@ export default function PageHero({
   subtitle,
   backgroundImage,
   backgroundImageAlt,
+  size = 'default',
 }: PageHeroProps) {
   return (
     <section className="relative h-[40vh] min-h-[300px] sm:h-[45vh] sm:min-h-[350px] md:h-[50vh] md:min-h-[400px] lg:h-[60vh] xl:h-[70vh] flex items-center justify-center overflow-hidden">
@@ -41,13 +43,15 @@ export default function PageHero({
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center max-w-4xl mx-auto"
+          className={`text-center mx-auto ${
+            size === 'small' ? 'max-w-6xl' : 'max-w-4xl'
+          }`}
         >
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-white mb-3 sm:mb-4 md:mb-6 leading-tight drop-shadow-lg px-2"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold text-white mb-3 sm:mb-4 md:mb-6 leading-tight drop-shadow-lg px-2"
           >
             {title}
           </motion.h1>

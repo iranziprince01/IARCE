@@ -41,6 +41,53 @@ export default async function AboutPage({
 }: {
   params: { locale: string };
 }) {
-  return <AboutContent />;
+  const canonicalUrl = locale === 'en' ? 'https://iarce.org/about' : `https://iarce.org/${locale}/about`;
+  
+  return (
+    <>
+      <AboutContent />
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: locale === 'en' ? 'https://iarce.org' : `https://iarce.org/${locale}`,
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'About Us',
+                item: canonicalUrl,
+              },
+            ],
+          }),
+        }}
+      />
+      {/* AboutPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'AboutPage',
+            name: 'About Us',
+            description: 'Learn about International Anglican Revival Ministries - a vibrant Christian community in Edmonton, Alberta.',
+            url: canonicalUrl,
+            mainEntity: {
+              '@type': 'Organization',
+              name: 'International Anglican Revival Ministries',
+            },
+          }),
+        }}
+      />
+    </>
+  );
 }
 

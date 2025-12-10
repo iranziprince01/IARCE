@@ -45,7 +45,7 @@
     "visit": "Visit Us",
     "worshipWithUs": "Worship With Us",
     "bibleVerse": "Come to me, all you who are weary and burdened, and I will give you rest.",
-    "bibleVerseRef": "— Matthew 11:28",
+    "bibleVerseRef": "Matthew 11:28",
     "welcomeGreeting": "Dear Beloved Community,",
     "welcomeTitle1": "Welcome to",
     "welcomeTitle2": "International Anglican Revival Ministries!",
@@ -60,7 +60,7 @@
     "congregation": "We serve a diverse congregation in Edmonton, including Canadians and African communities, offering worship services in English and Kinyarwanda.",
     "ministry": "Our ministry extends beyond Canada, partnering with churches in Africa and supporting vulnerable refugees, widows, orphans, and displaced families in Uganda, Kenya, Rwanda, and other regions.",
     "vision": "Vision",
-    "visionText": "To connect families and communities—both in Edmonton and globally—to transformational development, spiritual growth, and faith-based opportunities that promote holistic wellbeing and sustainable change.",
+    "visionText": "To connect families and communities, both in Edmonton and globally, to transformational development, spiritual growth, and faith-based opportunities that promote holistic wellbeing and sustainable change.",
     "mission": "Mission",
     "missionText": "Our mission is to empower individuals and communities through spiritual formation, social support, and holistic development. We promote faith-driven aspirations that help vulnerable groups realize their God-given potential.",
     "marks": "The Marks of Mission",
@@ -241,7 +241,7 @@
     "readyDesc": "Fill out the registration form on the right to begin your membership journey. We'll be in touch soon to discuss next steps."
   },
   "prayer": {
-    "title": "Prayer",
+    "title": "Prayer Request",
     "subtitle": "Join our prayer groups and intercessory prayer ministry.",
     "ministry": "Prayer Ministry",
     "ministryDesc": "Prayer is at the heart of our church. We believe in the power of prayer and encourage everyone to participate in our prayer ministry.",
@@ -301,7 +301,7 @@
     "donateNow": "Donate Now →",
     "volunteerNow": "Volunteer Now →",
     "mission": "Our Mission",
-    "missionText1": "Holistic care—physical, emotional, spiritual—for elderly refugees, offering shelter, health support, advocacy, and community integration.",
+    "missionText1": "Holistic care, including physical, emotional, and spiritual support, for elderly refugees, offering shelter, health support, advocacy, and community integration.",
     "missionText2": "Our mission is to safeguard the dignity and improve the quality of life of refugee seniors through shelter provision, access to healthcare, counseling, and empowerment, grounded in faith and compassion.",
     "missionText3": "We commit to serving elderly refugees by offering safe lodging, nutritious food, social and spiritual support, and resources to help them rebuild hope and participate fully in society.",
     "vision": "Our Vision",
@@ -316,7 +316,7 @@
       },
       {
         "title": "Dignity",
-        "desc": "We uphold the inherent worth of each person, ensuring our elders are treated with respect, honor, and care—regardless of background or circumstance."
+        "desc": "We uphold the inherent worth of each person, ensuring our elders are treated with respect, honor, and care, regardless of background or circumstance."
       },
       {
         "title": "Faith in Action",
@@ -345,7 +345,7 @@
       },
       {
         "title": "Social Isolation, Protection, and Dignity",
-        "desc": "Elder refugees often means loss of family or community support networks. Older people are alone and dependent on others. There are risks of neglect, abuse (verbal, physical, sexual) especially for older women. Some reports mention that elderly in camps feel less respected, more marginalized. Mental health—trauma, grief, loss, uncertainty—these are major issues."
+        "desc": "Elder refugees often means loss of family or community support networks. Older people are alone and dependent on others. There are risks of neglect, abuse (verbal, physical, sexual) especially for older women. Some reports mention that elderly in camps feel less respected, more marginalized. Mental health challenges, including trauma, grief, loss, and uncertainty, are major issues."
       }
     ],
     "proposedSolutions": "Our Proposed Solutions",

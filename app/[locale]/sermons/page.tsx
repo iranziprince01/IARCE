@@ -6,14 +6,71 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
+  const canonicalUrl = locale === 'en' ? 'https://iarce.org/sermons' : `https://iarce.org/${locale}/sermons`;
+  
   return {
+    metadataBase: new URL('https://iarce.org'),
     title: 'Sermons & Messages | International Anglican Revival Ministries',
     description:
-      'Watch and listen to sermons and messages. Stay connected with our weekly teachings and spiritual guidance.',
+      'Watch and listen to sermons and messages from International Anglican Revival Ministries. Stay connected with our weekly teachings and spiritual guidance.',
+    keywords: [
+      'Church sermons Edmonton',
+      'Sermons online',
+      'Bible teaching Edmonton',
+      'Church messages Edmonton',
+      'Spiritual guidance Edmonton',
+      'Christian sermons',
+      'Anglican sermons',
+    ],
+    openGraph: {
+      title: 'Sermons & Messages | International Anglican Revival Ministries',
+      description:
+        'Watch and listen to sermons and messages. Stay connected with our weekly teachings and spiritual guidance.',
+      url: canonicalUrl,
+      type: 'website',
+      locale: locale === 'en' ? 'en_CA' : locale,
+    },
+    alternates: {
+      canonical: canonicalUrl,
+    },
   };
 }
 
-export default function SermonsPage() {
-  return <SermonsContent />;
+export default function SermonsPage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const canonicalUrl = locale === 'en' ? 'https://iarce.org/sermons' : `https://iarce.org/${locale}/sermons`;
+  
+  return (
+    <>
+      <SermonsContent />
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: locale === 'en' ? 'https://iarce.org' : `https://iarce.org/${locale}`,
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Sermons',
+                item: canonicalUrl,
+              },
+            ],
+          }),
+        }}
+      />
+    </>
+  );
 }
 

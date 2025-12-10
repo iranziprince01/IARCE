@@ -17,7 +17,6 @@ export default function VolunteerContent() {
       {/* Hero Section */}
       <PageHero
         title={t('title')}
-        subtitle={t('subtitle')}
         backgroundImage="/images/foundation/010.jpg"
         backgroundImageAlt="Church volunteer service"
       />

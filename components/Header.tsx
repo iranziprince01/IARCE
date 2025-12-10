@@ -70,11 +70,11 @@ export default function Header() {
             : 'bg-white/95 backdrop-blur-sm'
         }`}
       >
-      <nav className="container-custom py-2 sm:py-3 md:py-4 px-3 sm:px-4 md:px-6 lg:px-8">
+      <nav className="container-custom py-2 sm:py-3 md:py-4 px-2 sm:px-3 md:px-4 lg:px-6 xl:px-8">
         <div className="flex items-center justify-between w-full gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8">
           {/* Logo and Name - Left Aligned */}
-          <Link href={locale === defaultLocale ? '/' : `/${locale}`} className="flex items-center space-x-1.5 sm:space-x-2 md:space-x-3 flex-shrink-0 min-w-0">
-            <div className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex-shrink-0">
+          <Link href={locale === defaultLocale ? '/' : `/${locale}`} className="flex items-center space-x-1 sm:space-x-1.5 md:space-x-2 lg:space-x-3 flex-shrink-0 min-w-0">
+            <div className="relative w-8 h-8 xs:w-9 xs:h-9 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex-shrink-0">
               <Image
                 src="/logos/website.webp"
                 alt="International Anglican Revival Ministries Logo"
@@ -84,20 +84,20 @@ export default function Header() {
               />
             </div>
             <div className="hidden sm:block min-w-0">
-              <h1 className="text-[10px] sm:text-xs md:text-sm font-extrabold text-gray-900 leading-tight max-w-[140px] sm:max-w-[160px] md:max-w-[180px] lg:max-w-[200px]">
-                International Anglican<br />Revival Ministries
+              <h1 className="text-xs sm:text-xs md:text-sm lg:text-base font-extrabold text-gray-900 leading-none max-w-[160px] sm:max-w-[180px] md:max-w-[200px] lg:max-w-[220px] xl:max-w-[240px]">
+                International<br />Anglican Revival<br />Ministries
               </h1>
             </div>
           </Link>
 
           {/* Desktop Navigation - Center */}
-          <div className="hidden lg:flex items-center space-x-1 xl:space-x-2 whitespace-nowrap flex-1 justify-center max-w-2xl mx-auto">
+          <div className="hidden lg:flex items-center space-x-0.5 xl:space-x-1 whitespace-nowrap flex-1 justify-center max-w-2xl mx-auto">
             {navItems.map((item) => (
               <Link
                 key={item.key}
                 href={item.href}
                 prefetch={true}
-                className={`px-2 xl:px-3 py-1.5 xl:py-2 rounded-lg transition-colors duration-200 text-xs xl:text-sm font-bold ${
+                className={`px-1.5 xl:px-2 py-1.5 xl:py-2 rounded-lg transition-colors duration-200 text-xs xl:text-sm font-bold ${
                   isActive(item.href)
                     ? 'bg-gold-500 text-white'
                     : 'text-gray-700 hover:bg-gold-50 hover:text-gold-600'
@@ -114,7 +114,7 @@ export default function Header() {
               onMouseLeave={() => setIsGetInvolvedOpen(false)}
             >
               <button
-                className={`px-2 xl:px-3 py-1.5 xl:py-2 rounded-lg transition-colors duration-200 text-xs xl:text-sm font-bold ${
+                className={`px-1.5 xl:px-2 py-1.5 xl:py-2 rounded-lg transition-colors duration-200 text-xs xl:text-sm font-bold ${
                   isActive(locale === defaultLocale ? '/get-involved' : `/${locale}/get-involved`)
                     ? 'bg-gold-500 text-white'
                     : 'text-gray-700 hover:bg-gold-50 hover:text-gold-600'
@@ -152,7 +152,7 @@ export default function Header() {
               <Link
                 href={locale === defaultLocale ? '/contact' : `/${locale}/contact`}
                 prefetch={true}
-                className={`px-2 xl:px-3 py-1.5 xl:py-2 rounded-lg transition-colors duration-200 text-xs xl:text-sm font-bold ${
+                className={`px-1.5 xl:px-2 py-1.5 xl:py-2 rounded-lg transition-colors duration-200 text-xs xl:text-sm font-bold ${
                   isActive(locale === defaultLocale ? '/contact' : `/${locale}/contact`)
                     ? 'bg-gold-500 text-white'
                     : 'text-gray-700 hover:bg-gold-50 hover:text-gold-600'
@@ -163,7 +163,7 @@ export default function Header() {
             </div>
 
             {/* Donate and Language Switcher - Right Aligned */}
-            <div className="hidden lg:flex items-center space-x-2 xl:space-x-3 2xl:space-x-4 flex-shrink-0">
+            <div className="hidden lg:flex items-center space-x-1.5 xl:space-x-2 2xl:space-x-3 flex-shrink-0">
               <Link
                 href={locale === defaultLocale ? '/donate' : `/${locale}/donate`}
                 prefetch={true}

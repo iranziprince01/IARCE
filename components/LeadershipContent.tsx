@@ -17,7 +17,6 @@ export default function LeadershipContent() {
       {/* Hero Section */}
       <PageHero
         title={t('title')}
-        subtitle={t('subtitle')}
         backgroundImage="/images/foundation/010.jpg"
         backgroundImageAlt="Church leadership and pastoral team"
       />
@@ -51,7 +50,7 @@ export default function LeadershipContent() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="bg-white rounded-xl sm:rounded-2xl shadow-xl overflow-hidden h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px]"
+                className="bg-white rounded-xl sm:rounded-2xl shadow-xl overflow-hidden h-[300px] xs:h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[550px]"
               >
                 <div className="relative w-full h-full">
                   <Image
@@ -75,7 +74,7 @@ export default function LeadershipContent() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-center h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px]"
+                className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col justify-center min-h-[300px] xs:min-h-[350px] sm:min-h-[400px] md:min-h-[450px] lg:min-h-[500px] xl:min-h-[550px]"
               >
                 <div className="mb-4 sm:mb-5">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3">

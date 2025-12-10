@@ -29,6 +29,7 @@ export async function generateMetadata({
     keywords: [
       'Anglican church Edmonton',
       'International Anglican Revival Ministries',
+      'IARCE',
       'Pentecostal Anglican church',
       'Multilingual church Edmonton',
       'African churches in Edmonton',
@@ -45,6 +46,16 @@ export async function generateMetadata({
       'Kinyarwanda church Edmonton',
       'Rwandan church Canada',
       'East African church Edmonton',
+      '6110 Fulton Road Edmonton',
+      'Edmonton church services',
+      'Anglican Pentecostal church',
+      'Edmonton religious community',
+      'Christian ministry Edmonton',
+      'Sunday worship Edmonton',
+      'Bible study Edmonton',
+      'Prayer ministry Edmonton',
+      'Youth ministry Edmonton',
+      'Refugee ministry Edmonton',
     ],
     authors: [{ name: 'International Anglican Revival Ministries' }],
     creator: 'International Anglican Revival Ministries',
@@ -55,9 +66,9 @@ export async function generateMetadata({
       telephone: false,
     },
     openGraph: {
-      title: 'International Anglican Revival Ministries',
+      title: 'International Anglican Revival Ministries | IARCE',
       description:
-        'A vibrant Christian community in Edmonton dedicated to spiritual growth, compassion, and service. Multilingual worship services in English and Kinyarwanda.',
+        'A vibrant Christian community in Edmonton, Alberta, dedicated to spiritual growth, compassion, and service. Multilingual worship services in English and Kinyarwanda. Join us for Sunday worship, community outreach, and refugee support programs.',
       url: canonicalUrl,
       siteName: 'International Anglican Revival Ministries',
       images: [
@@ -65,18 +76,21 @@ export async function generateMetadata({
           url: ogImage,
           width: 1200,
           height: 630,
-          alt: 'International Anglican Revival Ministries',
+          alt: 'International Anglican Revival Ministries - A vibrant Christian community in Edmonton',
         },
       ],
       locale: locale === 'en' ? 'en_CA' : locale,
       type: 'website',
+      countryName: 'Canada',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'International Anglican Revival Ministries',
+      title: 'International Anglican Revival Ministries | IARCE',
       description:
-        'A vibrant Christian community in Edmonton dedicated to spiritual growth, compassion, and service.',
+        'A vibrant Christian community in Edmonton, Alberta, dedicated to spiritual growth, compassion, and service. Multilingual worship services in English and Kinyarwanda.',
       images: [ogImage],
+      site: '@iarministries',
+      creator: '@iarministries',
     },
     alternates: {
       canonical: canonicalUrl,
@@ -113,6 +127,27 @@ export default function HomePage() {
       <MinistriesPreview />
       <ServiceTimes />
       <CallToAction />
+      {/* Additional Structured Data for Homepage */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'International Anglican Revival Ministries',
+            alternateName: 'IARCE',
+            url: 'https://iarce.org',
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: {
+                '@type': 'EntryPoint',
+                urlTemplate: 'https://iarce.org/search?q={search_term_string}',
+              },
+              'query-input': 'required name=search_term_string',
+            },
+          }),
+        }}
+      />
     </>
   );
 }

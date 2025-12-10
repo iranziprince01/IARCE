@@ -36,11 +36,24 @@ export default function WelcomeMessage() {
                 <p className="text-blue-600 font-semibold text-xs md:text-sm mb-1.5 md:mb-2 tracking-wide">
                   {t('welcomeGreeting')}
                 </p>
-                <h2 className="text-xl md:text-2xl lg:text-3xl font-extrabold mb-2 md:mb-3 leading-tight">
+                <h2 className="text-xl md:text-2xl lg:text-3xl font-extrabold mb-2 md:mb-3 leading-none">
                   <span className="text-blue-600">{t('welcomeTitle1')}</span>
                   <br />
                   <span className="text-gold-600 bg-gradient-to-r from-gold-600 to-gold-500 bg-clip-text text-transparent">
-                    {t('welcomeTitle2')}
+                    {(() => {
+                      const title2 = t('welcomeTitle2');
+                      // Split "International Anglican Revival Ministries!" into 2 lines
+                      if (title2.includes('International Anglican')) {
+                        const before = title2.substring(0, title2.indexOf('International Anglican'));
+                        const after = title2.substring(title2.indexOf('International Anglican') + 'International Anglican'.length);
+                        return (
+                          <>
+                            {before}International Anglican<br />{after}
+                          </>
+                        );
+                      }
+                      return title2;
+                    })()}
                   </span>
                 </h2>
               </div>

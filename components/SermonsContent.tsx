@@ -21,7 +21,6 @@ export default function SermonsContent() {
       {/* Hero Section */}
       <PageHero
         title={t('title')}
-        subtitle={t('comingSoon')}
         backgroundImage="/images/foundation/002.jpg"
         backgroundImageAlt="Church sermons and messages"
       />
@@ -42,18 +41,18 @@ export default function SermonsContent() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto bg-white rounded-xl shadow-xl p-12 text-center"
+            className="max-w-4xl mx-auto bg-white rounded-xl shadow-xl p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 text-center px-4 sm:px-6"
           >
-            <div className="mb-6 flex justify-center">
-              <VideoCameraIcon className="w-20 h-20 text-gold-600" />
+            <div className="mb-4 sm:mb-5 md:mb-6 flex justify-center">
+              <VideoCameraIcon className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 text-gold-600" />
             </div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
               {t('latest')}
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed text-justify mb-8">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed text-justify mb-6 sm:mb-8">
               {t('workingOn')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
                 href={getPath('/contact')}
                 prefetch={true}

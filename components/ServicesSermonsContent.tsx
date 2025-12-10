@@ -41,7 +41,6 @@ export default function ServicesSermonsContent() {
       {/* Hero Section */}
       <PageHero
         title={tServicesSermons('title')}
-        subtitle={tServicesSermons('subtitle')}
         backgroundImage="/images/foundation/004.jpg"
         backgroundImageAlt="Church worship service"
       />

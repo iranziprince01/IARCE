@@ -82,13 +82,13 @@ export default function VolunteerForm() {
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
       onSubmit={handleSubmit(onSubmit)}
-      className="bg-white p-8 rounded-xl shadow-lg"
+      className="bg-white p-4 sm:p-5 md:p-6 lg:p-8 rounded-xl shadow-lg"
     >
-      <h2 className="text-2xl font-bold text-gray-900 mb-6 text-purple-600">
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-5 md:mb-6 text-purple-600">
         Volunteering Form
       </h2>
 
-      <div className="space-y-5">
+      <div className="space-y-4 sm:space-y-5">
         {/* Full Name */}
         <div>
           <label
@@ -98,13 +98,13 @@ export default function VolunteerForm() {
             Full Name <span className="text-red-500">*</span>
           </label>
           <div className="relative">
-            <UserIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+            <UserIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
             <input
               type="text"
               id="fullName"
               {...register('fullName')}
               placeholder="Enter your full name"
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors"
+              className="w-full pl-9 sm:pl-10 pr-3 sm:pr-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-sm sm:text-base"
             />
           </div>
           {errors.fullName && (
@@ -121,13 +121,13 @@ export default function VolunteerForm() {
             Email Address <span className="text-red-500">*</span>
           </label>
           <div className="relative">
-            <EnvelopeIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+            <EnvelopeIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
             <input
               type="email"
               id="email"
               {...register('email')}
               placeholder="Enter your email address"
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors"
+              className="w-full pl-9 sm:pl-10 pr-3 sm:pr-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors text-sm sm:text-base"
             />
           </div>
           {errors.email && (
@@ -167,13 +167,13 @@ export default function VolunteerForm() {
             Home Address <span className="text-red-500">*</span>
           </label>
           <div className="relative">
-            <HomeIcon className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+            <HomeIcon className="absolute left-3 top-3 w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
             <textarea
               id="homeAddress"
               rows={3}
               {...register('homeAddress')}
               placeholder="Enter your home address"
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors resize-none"
+              className="w-full pl-9 sm:pl-10 pr-3 sm:pr-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors resize-none text-sm sm:text-base"
             />
           </div>
           {errors.homeAddress && (
@@ -192,7 +192,7 @@ export default function VolunteerForm() {
           <select
             id="ministry"
             {...register('ministry')}
-            className="w-full px-4 py-3 border border-purple-500 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors bg-white"
+            className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-purple-500 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors bg-white text-sm sm:text-base"
           >
             <option value="">Select a ministry</option>
             {ministries.map((ministry) => (
@@ -218,7 +218,7 @@ export default function VolunteerForm() {
           <select
             id="availability"
             {...register('availability')}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors bg-white"
+            className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors bg-white text-sm sm:text-base"
           >
             <option value="">Select your availability</option>
             {availabilityOptions.map((option) => (
@@ -245,7 +245,7 @@ export default function VolunteerForm() {
             rows={4}
             {...register('reason')}
             placeholder="Share your reason for volunteering"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors resize-none"
+            className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-colors resize-none text-sm sm:text-base"
           />
           {errors.reason && (
             <p className="mt-1 text-sm text-red-600">{errors.reason.message}</p>
@@ -256,7 +256,7 @@ export default function VolunteerForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg text-sm sm:text-base"
         >
           {isSubmitting ? 'Submitting...' : 'Submit Volunteering Request'}
         </button>

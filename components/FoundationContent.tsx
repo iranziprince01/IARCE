@@ -13,6 +13,8 @@ import {
   BuildingOfficeIcon,
   ExclamationTriangleIcon,
   LightBulbIcon,
+  StarIcon,
+  CheckCircleIcon,
 } from '@heroicons/react/24/outline';
 import { defaultLocale } from '@/i18n/request';
 import { useState } from 'react';
@@ -45,6 +47,8 @@ export default function FoundationContent() {
     HeartIcon,
     ShieldCheckIcon,
     HandRaisedIcon,
+    StarIcon,
+    CheckCircleIcon,
   ];
 
   return (
@@ -52,9 +56,9 @@ export default function FoundationContent() {
       {/* Hero Section */}
       <PageHero
         title={t('title')}
-        subtitle={t('subtitle')}
         backgroundImage="/images/foundation/005.jpg"
         backgroundImageAlt="Refugee support and community care"
+        size="small"
       />
 
       {/* About Section */}
@@ -135,9 +139,6 @@ export default function FoundationContent() {
               <h2 className="heading-secondary text-gray-900 mb-3 sm:mb-4">
                 Our Gallery
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-                Capturing moments of hope, care, and transformation in the lives of refugee seniors
-              </p>
             </motion.div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 lg:gap-6 px-4 sm:px-6">
@@ -358,17 +359,20 @@ export default function FoundationContent() {
             </motion.div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8 px-4 sm:px-6">
-              {t.raw('valuesList').map(
+              {(Array.isArray(t.raw('valuesList')) ? t.raw('valuesList') : []).map(
                 (
                   value: { title: string; desc: string },
                   index: number
                 ) => {
-                  const Icon = valueIcons[index];
+                  const Icon = valueIcons[index] || HeartIcon;
                   const colors = [
                     'from-red-500 to-pink-500',
                     'from-blue-500 to-blue-600',
                     'from-gold-500 to-gold-600',
+                    'from-purple-500 to-purple-600',
+                    'from-teal-500 to-teal-600',
                   ];
+                  const color = colors[index] || 'from-gray-500 to-gray-600';
 
                   return (
                     <motion.div
@@ -391,7 +395,7 @@ export default function FoundationContent() {
                         />
                       </div>
                       <div
-                        className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r ${colors[index]} rounded-lg sm:rounded-xl flex items-center justify-center mb-4 sm:mb-5 md:mb-6`}
+                        className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r ${color} rounded-lg sm:rounded-xl flex items-center justify-center mb-4 sm:mb-5 md:mb-6`}
                       >
                         <Icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                       </div>
@@ -483,13 +487,10 @@ export default function FoundationContent() {
               <h2 className="heading-secondary text-gray-900 mb-3 sm:mb-4">
                 {t('challenges')}
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-                Understanding the complex challenges faced by elder refugees helps us better serve their needs
-              </p>
             </motion.div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8 px-4 sm:px-6">
-              {t.raw('challengesList').map(
+              {(Array.isArray(t.raw('challengesList')) ? t.raw('challengesList') : []).map(
                 (
                   challenge: { title: string; desc: string },
                   index: number
@@ -535,13 +536,10 @@ export default function FoundationContent() {
               <h2 className="heading-secondary text-gray-900 mb-3 sm:mb-4">
                 {t('proposedSolutions')}
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-                Our comprehensive approach to addressing the needs of refugee seniors
-              </p>
             </motion.div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8 px-4 sm:px-6">
-              {t.raw('solutionsList').map(
+              {(Array.isArray(t.raw('solutionsList')) ? t.raw('solutionsList') : []).map(
                 (
                   solution: { title: string; desc: string },
                   index: number
@@ -664,7 +662,7 @@ export default function FoundationContent() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
-            className="relative max-w-5xl max-h-[90vh] w-full h-full"
+            className="relative max-w-5xl max-h-[95vh] sm:max-h-[90vh] w-full mx-2 sm:mx-4"
             onClick={(e) => e.stopPropagation()}
           >
             <Image
