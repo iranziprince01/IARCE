@@ -7,10 +7,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/leadership' : `https://iarce.org/${locale}/leadership`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/leadership' : `https://www.iarmministries.org/${locale}/leadership`;
   
   return {
-    metadataBase: new URL('https://iarce.org'),
+    metadataBase: new URL('https://www.iarmministries.org'),
     title: 'Leadership & Administration | International Anglican Revival Ministries',
     description:
       'Meet the leadership team of International Anglican Revival Ministries. Learn about our Senior Pastor, pastors, and other church leaders who guide and serve our community.',
@@ -41,7 +41,7 @@ export default async function LeadershipPage({
 }: {
   params: { locale: string };
 }) {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/leadership' : `https://iarce.org/${locale}/leadership`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/leadership' : `https://www.iarmministries.org/${locale}/leadership`;
   
   return (
     <>
@@ -58,7 +58,7 @@ export default async function LeadershipPage({
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: locale === 'en' ? 'https://iarce.org' : `https://iarce.org/${locale}`,
+                item: locale === 'en' ? 'https://www.iarmministries.org' : `https://www.iarmministries.org/${locale}`,
               },
               {
                 '@type': 'ListItem',

@@ -7,10 +7,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/about' : `https://iarce.org/${locale}/about`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/about' : `https://www.iarmministries.org/${locale}/about`;
   
   return {
-    metadataBase: new URL('https://iarce.org'),
+    metadataBase: new URL('https://www.iarmministries.org'),
     title: 'About Us | International Anglican Revival Ministries',
     description:
       'Learn about International Anglican Revival Ministries - a vibrant Christian community in Edmonton, Alberta, dedicated to spiritual growth, compassion, and service. Meet our leadership, discover our mission and vision, and learn about our core values.',
@@ -41,7 +41,7 @@ export default async function AboutPage({
 }: {
   params: { locale: string };
 }) {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/about' : `https://iarce.org/${locale}/about`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/about' : `https://www.iarmministries.org/${locale}/about`;
   
   return (
     <>
@@ -58,7 +58,7 @@ export default async function AboutPage({
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: locale === 'en' ? 'https://iarce.org' : `https://iarce.org/${locale}`,
+                item: locale === 'en' ? 'https://www.iarmministries.org' : `https://www.iarmministries.org/${locale}`,
               },
               {
                 '@type': 'ListItem',

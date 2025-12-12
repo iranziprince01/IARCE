@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/'],
       },
     ],
-    sitemap: 'https://iarce.org/sitemap.xml',
+    sitemap: 'https://www.iarmministries.org/sitemap.xml',
   };
 }
 

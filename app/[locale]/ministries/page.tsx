@@ -6,10 +6,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/ministries' : `https://iarce.org/${locale}/ministries`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/ministries' : `https://www.iarmministries.org/${locale}/ministries`;
   
   return {
-    metadataBase: new URL('https://iarce.org'),
+    metadataBase: new URL('https://www.iarmministries.org'),
     title: 'Our Ministries | International Anglican Revival Ministries',
     description:
       'Explore our ministries at International Anglican Revival Ministries including Worship & Music, Youth, Children, Women, Men, and Missions & Outreach programs. Join us in serving our community.',
@@ -41,7 +41,7 @@ export default function MinistriesPage({
 }: {
   params: { locale: string };
 }) {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/ministries' : `https://iarce.org/${locale}/ministries`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/ministries' : `https://www.iarmministries.org/${locale}/ministries`;
   
   return (
     <>
@@ -58,7 +58,7 @@ export default function MinistriesPage({
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: locale === 'en' ? 'https://iarce.org' : `https://iarce.org/${locale}`,
+                item: locale === 'en' ? 'https://www.iarmministries.org' : `https://www.iarmministries.org/${locale}`,
               },
               {
                 '@type': 'ListItem',

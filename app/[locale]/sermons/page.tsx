@@ -6,10 +6,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/sermons' : `https://iarce.org/${locale}/sermons`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/sermons' : `https://www.iarmministries.org/${locale}/sermons`;
   
   return {
-    metadataBase: new URL('https://iarce.org'),
+    metadataBase: new URL('https://www.iarmministries.org'),
     title: 'Sermons & Messages | International Anglican Revival Ministries',
     description:
       'Watch and listen to sermons and messages from International Anglican Revival Ministries. Stay connected with our weekly teachings and spiritual guidance.',
@@ -41,7 +41,7 @@ export default function SermonsPage({
 }: {
   params: { locale: string };
 }) {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/sermons' : `https://iarce.org/${locale}/sermons`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/sermons' : `https://www.iarmministries.org/${locale}/sermons`;
   
   return (
     <>
@@ -58,7 +58,7 @@ export default function SermonsPage({
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: locale === 'en' ? 'https://iarce.org' : `https://iarce.org/${locale}`,
+                item: locale === 'en' ? 'https://www.iarmministries.org' : `https://www.iarmministries.org/${locale}`,
               },
               {
                 '@type': 'ListItem',

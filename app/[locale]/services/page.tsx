@@ -57,7 +57,7 @@ export default function ServicesPage() {
     organizer: {
       '@type': 'Organization',
       name: 'International Anglican Revival Ministries',
-      url: 'https://iarce.org',
+      url: 'https://www.iarmministries.org',
     },
     offers: {
       '@type': 'Offer',

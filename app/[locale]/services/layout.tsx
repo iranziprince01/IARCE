@@ -5,10 +5,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/services' : `https://iarce.org/${locale}/services`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/services' : `https://www.iarmministries.org/${locale}/services`;
   
   return {
-    metadataBase: new URL('https://iarce.org'),
+    metadataBase: new URL('https://www.iarmministries.org'),
     title: 'Services | International Anglican Revival Ministries',
     description:
       'Join us for worship services, prayer meetings, and Bible study at International Anglican Revival Ministries. Sunday services at 10:00 AM, Wednesday and Thursday evening services.',

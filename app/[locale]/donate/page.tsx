@@ -6,10 +6,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/donate' : `https://iarce.org/${locale}/donate`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/donate' : `https://www.iarmministries.org/${locale}/donate`;
   
   return {
-    metadataBase: new URL('https://iarce.org'),
+    metadataBase: new URL('https://www.iarmministries.org'),
     title: 'Donate | International Anglican Revival Ministries',
     description:
       'Support the ministry of International Anglican Revival Ministries through your generous giving. Every contribution makes a difference in our community outreach, refugee support, and spiritual growth programs.',
@@ -41,7 +41,7 @@ export default function DonatePage({
 }: {
   params: { locale: string };
 }) {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/donate' : `https://iarce.org/${locale}/donate`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/donate' : `https://www.iarmministries.org/${locale}/donate`;
   
   return (
     <>
@@ -58,7 +58,7 @@ export default function DonatePage({
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: locale === 'en' ? 'https://iarce.org' : `https://iarce.org/${locale}`,
+                item: locale === 'en' ? 'https://www.iarmministries.org' : `https://www.iarmministries.org/${locale}`,
               },
               {
                 '@type': 'ListItem',

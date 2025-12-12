@@ -85,7 +85,7 @@ git push -u origin main
 ### Step 3: Connect Custom Domain (GoDaddy)
 
 1. In your Vercel project, go to Settings → Domains
-2. Add your custom domain (e.g., `iarce.org`)
+2. Add your custom domain (e.g., `iarmministries.org`)
 3. Vercel will provide DNS records to add
 
 4. In GoDaddy:
@@ -103,7 +103,7 @@ Create a `.env.local` file for local development (if needed):
 
 ```env
 # Add any environment variables here
-NEXT_PUBLIC_SITE_URL=https://iarce.org
+NEXT_PUBLIC_SITE_URL=https://www.iarmministries.org
 ```
 
 ## 📝 Content Management

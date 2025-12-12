@@ -6,10 +6,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/contact' : `https://iarce.org/${locale}/contact`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/contact' : `https://www.iarmministries.org/${locale}/contact`;
   
   return {
-    metadataBase: new URL('https://iarce.org'),
+    metadataBase: new URL('https://www.iarmministries.org'),
     title: 'Contact Us | International Anglican Revival Ministries',
     description:
       'Get in touch with International Anglican Revival Ministries. Visit us at 6110 Fulton Road, Edmonton, AB T6A 3T3. Phone: +1 587-778-6406 or +1 825-461-7431. Sunday services at 10:00 AM.',
@@ -40,7 +40,7 @@ export default function ContactPage({
 }: {
   params: { locale: string };
 }) {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/contact' : `https://iarce.org/${locale}/contact`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/contact' : `https://www.iarmministries.org/${locale}/contact`;
   
   return (
     <>
@@ -57,7 +57,7 @@ export default function ContactPage({
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: locale === 'en' ? 'https://iarce.org' : `https://iarce.org/${locale}`,
+                item: locale === 'en' ? 'https://www.iarmministries.org' : `https://www.iarmministries.org/${locale}`,
               },
               {
                 '@type': 'ListItem',

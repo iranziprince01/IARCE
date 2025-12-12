@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'International Anglican Revival Ministries',
-    short_name: 'IARCE',
+    short_name: 'IARM',
     description: 'A vibrant Christian community in Edmonton dedicated to spiritual growth, compassion, and service.',
     start_url: '/',
     display: 'standalone',

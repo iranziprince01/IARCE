@@ -6,10 +6,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/foundation' : `https://iarce.org/${locale}/foundation`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/foundation' : `https://www.iarmministries.org/${locale}/foundation`;
   
   return {
-    metadataBase: new URL('https://iarce.org'),
+    metadataBase: new URL('https://www.iarmministries.org'),
     title:
       'Shelter of Refugee Seniors International Ministries (SRSIM) | International Anglican Revival Ministries',
     description:
@@ -43,7 +43,7 @@ export default function FoundationPage({
 }: {
   params: { locale: string };
 }) {
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org/foundation' : `https://iarce.org/${locale}/foundation`;
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org/foundation' : `https://www.iarmministries.org/${locale}/foundation`;
   
   return (
     <>
@@ -60,7 +60,7 @@ export default function FoundationPage({
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: locale === 'en' ? 'https://iarce.org' : `https://iarce.org/${locale}`,
+                item: locale === 'en' ? 'https://www.iarmministries.org' : `https://www.iarmministries.org/${locale}`,
               },
               {
                 '@type': 'ListItem',

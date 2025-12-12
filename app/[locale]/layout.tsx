@@ -25,7 +25,7 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
 
-  const baseUrl = 'https://iarce.org';
+  const baseUrl = 'https://www.iarmministries.org';
   const siteUrl = locale === 'en' ? baseUrl : `${baseUrl}/${locale}`;
 
   // Enhanced Organization Schema
@@ -34,7 +34,7 @@ export default async function LocaleLayout({
     '@type': 'Organization',
     '@id': `${baseUrl}/#organization`,
     name: 'International Anglican Revival Ministries',
-    alternateName: ['IARCE', 'IARM'],
+    alternateName: 'IARM',
     legalName: 'International Anglican Revival Ministries',
     url: baseUrl,
     logo: `${baseUrl}/logos/website.webp`,
@@ -112,7 +112,7 @@ export default async function LocaleLayout({
     '@type': 'PlaceOfWorship',
     '@id': `${siteUrl}/#place`,
     name: 'International Anglican Revival Ministries',
-    alternateName: 'IARCE',
+    alternateName: 'IARM',
     description: 'A vibrant Christian community in Edmonton dedicated to spiritual growth, compassion, and service. Multilingual worship services in English and Kinyarwanda.',
     address: {
       '@type': 'PostalAddress',

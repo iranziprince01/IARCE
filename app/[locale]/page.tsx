@@ -15,13 +15,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const t = await getTranslations({ locale });
 
-  const canonicalUrl = locale === 'en' ? 'https://iarce.org' : `https://iarce.org/${locale}`;
-  const ogImage = 'https://iarce.org/og-image.jpg';
+  const canonicalUrl = locale === 'en' ? 'https://www.iarmministries.org' : `https://www.iarmministries.org/${locale}`;
+  const ogImage = 'https://www.iarmministries.org/og-image.jpg';
 
   return {
-    metadataBase: new URL('https://iarce.org'),
+    metadataBase: new URL('https://www.iarmministries.org'),
     title: {
-      default: 'International Anglican Revival Ministries | IARCE',
+      default: 'International Anglican Revival Ministries | IARM',
       template: '%s | International Anglican Revival Ministries',
     },
     description:
@@ -29,7 +29,7 @@ export async function generateMetadata({
     keywords: [
       'Anglican church Edmonton',
       'International Anglican Revival Ministries',
-      'IARCE',
+      'IARM',
       'Pentecostal Anglican church',
       'Multilingual church Edmonton',
       'African churches in Edmonton',
@@ -66,7 +66,7 @@ export async function generateMetadata({
       telephone: false,
     },
     openGraph: {
-      title: 'International Anglican Revival Ministries | IARCE',
+      title: 'International Anglican Revival Ministries | IARM',
       description:
         'A vibrant Christian community in Edmonton, Alberta, dedicated to spiritual growth, compassion, and service. Multilingual worship services in English and Kinyarwanda. Join us for Sunday worship, community outreach, and refugee support programs.',
       url: canonicalUrl,
@@ -85,7 +85,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'International Anglican Revival Ministries | IARCE',
+      title: 'International Anglican Revival Ministries | IARM',
       description:
         'A vibrant Christian community in Edmonton, Alberta, dedicated to spiritual growth, compassion, and service. Multilingual worship services in English and Kinyarwanda.',
       images: [ogImage],
@@ -95,9 +95,9 @@ export async function generateMetadata({
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        'en-CA': 'https://iarce.org',
-        'en': 'https://iarce.org/en',
-        'rw': 'https://iarce.org/rw',
+        'en-CA': 'https://www.iarmministries.org',
+        'en': 'https://www.iarmministries.org/en',
+        'rw': 'https://www.iarmministries.org/rw',
       },
     },
     robots: {
@@ -135,13 +135,13 @@ export default function HomePage() {
             '@context': 'https://schema.org',
             '@type': 'WebSite',
             name: 'International Anglican Revival Ministries',
-            alternateName: 'IARCE',
-            url: 'https://iarce.org',
+            alternateName: 'IARM',
+            url: 'https://www.iarmministries.org',
             potentialAction: {
               '@type': 'SearchAction',
               target: {
                 '@type': 'EntryPoint',
-                urlTemplate: 'https://iarce.org/search?q={search_term_string}',
+                urlTemplate: 'https://www.iarmministries.org/search?q={search_term_string}',
               },
               'query-input': 'required name=search_term_string',
             },

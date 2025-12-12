@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { locales } from '@/i18n/request';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://iarce.org';
+  const baseUrl = 'https://www.iarmministries.org';
   
   // Main routes
   const mainRoutes = [
