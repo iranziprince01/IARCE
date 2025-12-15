@@ -11,6 +11,8 @@ A modern, multilingual church website built with Next.js 14, TypeScript, Tailwin
 - **Fast Performance**: Optimized for Lighthouse score 95+
 - **Accessible**: WCAG 2.1 AA compliant
 
+- LIVE DEMO: [Click Here](https://www.iarmministries.org/)
+
 ## 🚀 Getting Started
 
 ### Prerequisites
